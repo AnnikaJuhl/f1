@@ -2,12 +2,14 @@
   "name": "f1-discord",
   "version": "1.0.0",
   "main": "src/index.js",
+  "type": "commonjs",
   "scripts": {
     "dev": "nodemon src/index.js"
   },
   "license": "",
   "dependencies": {
     "@discordjs/rest": "^2.2.0",
+    "axios": "^1.9.0",
     "discord.js": "^14.14.1",
     "dotenv": "^16.5.0",
     "node-fetch": "^3.3.2"
