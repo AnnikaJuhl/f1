@@ -1,25 +1,7 @@
-const { REST, Routes } = require('discord.js');
-const commands = [
-  {
-    name: 'Max Verstappen',
-    description: 'replies with the GOAT',
-  },
-];
-
-const rest = new REST ({version:'10'}).setToken(process.env.discord_token);
-
-(async () => {
-  try {
-    console.log('Registering slash commands...');
-
-    await rest.put(
-      Routes.applicationGuildCommands(process.env.client_ID, 
-        process.env.guild_ID),
-        { body: commands }
-      )
-  
-      console.log('Slash commands registered correctly');
-  } catch (error) {
-    console.log(`Flat tire!: ${error}`);
-  }
-})();
+const { SlashCommandBuilder } = require("discord.js")
+module.exports = {
+  data: new SlashCommandBuilder()
+  .setName('max-verstappen')
+  .setDescription('Information on Max Verstappen'),
+  async execute(interaction) {
+  await interaction.reply('Arriving as Formula 1s youngest ever competitor at just 17 years old, Verstappen pushed his car, his rivals and the sports record books to the limit.')}}

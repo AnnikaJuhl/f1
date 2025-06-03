@@ -1,47 +1,78 @@
 (async () => {
-  require('dotenv').config()
+    require('dotenv').config();
+  const { REST, Routes, Collection, Client, GatewayIntentBits, InteractionCollector, Events } = require('discord.js');
 
-  const discord = require('discord.js');
-  const fs = require("fs");
-  const path = require('node:path');
-  const client = new discord.Client({
+  console.log(process.env.TOKEN)
+  const rest = new REST({ version: '10'}).setToken(process.env.TOKEN);
+
+  const client = new Client({
     intents: [
-      discord.GatewayIntentBits.Guilds,
-      discord.GatewayIntentBits.MessageContent,
-      discord.GatewayIntentBits.GuildMembers,
-      discord.GatewayIntentBits.GuildMessages]
+      GatewayIntentBits.Guilds,
+      GatewayIntentBits.MessageContent,
+      GatewayIntentBits.GuildMembers,
+      GatewayIntentBits.GuildMessages]
   });
 
-  const commands = [
-    {
-      name: 'Max Verstappen',
-      description: 'replies with the GOAT',
-    },
-  ];
+   client.on('ready', () => {
+    console.log('Going for the gap');
+});
 
+  const fs = require("fs");
+  const path = require('node:path');
+
+  client.commands = new Collection()
+  const commandsPath = path.join(__dirname, 'commands');
+  const commandFolder = fs.readdirSync(commandsPath);
+  for (const file of commandFolder) {
+    const filePath = path.join(commandsPath, file);
+    const command = require(filePath);
+  }
+
+  const slashCommand = []
   const commandFileNames = await fs.readdirSync("src/commands")
-  const command = new Map()
   commandFileNames.forEach(async (filename) => {
-    command.set(filename.split(".")[0], require(`./commands/${filename}`))
+      const commandFile = require('./commands/'+filename)
+      client.commands.set(commandFile.data.name, commandFile.execute);
+      slashCommand.push(commandFile.data.toJSON())
+
   })
-  console.log(commands)
-
-
-  require('dotenv').config();
-  const { REST, Routes } = require('discord.js');
-  console.log(process.env.discord_token)
-  const rest = new REST({ version: '10'}).setToken(process.env.discord_token);
 
   try {
     console.log('Registering slash commands...');
     await rest.put(
-      Routes.applicationGuildCommands(process.env.client_ID,
-        process.env.guild_ID),
-      { body: commands }
+      Routes.applicationGuildCommands(process.env.CLIENT_ID,
+        process.env.GUILD_ID),
+      { body: slashCommand }
     )
 
     console.log('Slash commands registered correctly');
   } catch (error) {
     console.log(`Flat tire!: ${error}`);
   }
+
+  client.on(Events.InteractionCreate, interaction => {
+  const response = client.commands.get(interaction.commandName);
+  if(response) {
+    response(interaction)
+  }
+  if (!response) {
+    console.error('Wrong garage! ${interaction.commandName}');
+    return;
+  }
+})
+
+const { SlashCommandBuilder } = require("discord.js")
+client.login(process.env.TOKEN)
+
 })();
+
+  // const promptFileNames = await fs.readdirSync("src/prompts")
+  // const prompt = new Map()
+  // promptFileNames.forEach(async (filename) => {
+  //   const fileData = require(`./prompts/${filename}`)
+  //   prompt.set(fileData.prompt, fileData.execute)
+  // }) 
+
+
+//   if(file.name) -> command
+// if(file.prompt) -> prompt
