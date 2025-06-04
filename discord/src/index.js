@@ -31,38 +31,22 @@ function loadFolder(folderPath) {
   } else throw new Error("No path " + path)
 }
 
-const commandFiles = loadFolder(commandsPath)
+const commandFiles = loadFolder(commandsPath);
+
 commandFiles.forEach(file => {
-  const commandFile = require(file)
+  const commandFile = require(file);
+
+  if (!commandFile || !commandFile.data || !commandFile.data.name || typeof commandFile.execute !== 'function') {
+    console.warn(`[BLACK FLAG] Skipping invalid command file: ${file}`);
+    return; 
+  }
+  
   // console.log(commandFile)
   // console.log(commandFile.data)
-//   if (commandFile.data && commandFile.data.name) {
-//     client.commands.set(commandFile.data.name, commandFile.execute);
-//     slashCommands.push(commandFile.data.toJSON());
-//   } else {
-//     console.error(`Missing name in command file: ${file}`);
-//   }
-// });
-  client.commands.set(commandFile.data.name, commandFile.execute)
-  slashCommands.push(commandFile.data.toJSON())
-})
 
-//  if (fs.existsSync(commandsPath)) {
-//     const commandFiles = fs.readdirSync(commandsPath)
-//     for (const file of commandFiles) {
-
-//     }
-
-//     for (const file of commandFiles) {
-//         const filePath = path.join(commandsPath, file);
-//         const command = require(filePath);
-//         if ('data' in command && 'execute' in command) {
-//         client.commands.set(command.data.name, command)
-//         slashCommands.push(command.data.toJSON())
-//     } else
-//         console.log(`[BLACK FLAG] Command at ${filePath} is missing data or execute property.`);
-//   }
-// }
+  client.commands.set(commandFile.data.name, commandFile);
+  slashCommands.push(commandFile.data.toJSON());
+  });
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
