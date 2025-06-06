@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  discord:
+    build: ./discord
+    restart: unless-stopped
+    volumes:
+      - ./discord:/app
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    # ports:
+      # - "27017:27017"
+    volumes:
+      - ./storage/mongo/data:/data/db
+      - ./storage/mongo/config:/data/configdb

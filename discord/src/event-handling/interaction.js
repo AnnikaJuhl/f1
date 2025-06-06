@@ -3,12 +3,15 @@ const { Events, MessageFlags } = require('discord.js');
 module.exports = {
   name: Events.InteractionCreate,
   async execute(interaction) {
+    
     if (interaction.isAutocomplete()) {
        console.log(`Received autocomplete for: ${interaction.commandName}`);
       const command = interaction.client.commands.get(interaction.commandName);
         console.log([...interaction.client.commands.values()].map(c => c.data?.name));
 
-       if (!command || !command.autocomplete) return; 
+       if (!command || !command.autocomplete) {
+        return interaction.respond([]);
+       }
 
        try {
         await command.autocomplete(interaction);
