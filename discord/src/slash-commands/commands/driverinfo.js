@@ -26,7 +26,6 @@ module.exports = {
                 ),
     
         async autocomplete(interaction) {
-             const focusedValue = interaction.options.getFocused();
-             const  
+             const focusedValue = interaction.options.getFocused();  
         }
-},
+}
