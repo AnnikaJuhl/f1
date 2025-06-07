@@ -1,4 +1,4 @@
-const { Events, MessageFlags } = require('discord.js');
+const { Events } = require('discord.js');
 
 module.exports = {
   name: Events.InteractionCreate,
@@ -26,7 +26,7 @@ module.exports = {
     const command = interaction.client.commands.get(interaction.commandName);
     if (!command) {
       console.error(`No command matching ${interaction.commandName}`);
-      return;
+      return; //don't forget to continue this if adding more 
     }
 
     try {
@@ -35,7 +35,7 @@ module.exports = {
       await command.execute(interaction);
     } catch (error) {
       console.error(error);
-      const response = { content: 'Loose lug nut, return to garage', flags: MessageFlags.Ephemeral };
+      const response = { content: 'Loose lug nut, return to garage', ephemeral:true };
       if (interaction.replied || interaction.deferred) {
         await interaction.followUp(response);
       } else {
