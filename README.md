@@ -1,0 +1,1 @@
+Pitstop is a discord bot that aims to bring easy to use and acessible information on all things Formula 1, including stats, standings, driver, and team history all the way from 1950 to the present!
