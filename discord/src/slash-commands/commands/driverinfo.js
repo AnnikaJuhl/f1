@@ -3,6 +3,7 @@ const driverinfo = require('../data/driverInfo')
 const drivername = require('../data/driversByYearNames.json')
 const driverstats = require('../data/driversByYearFull.json')
 const driverc = require('../data/DRIVERc.json')
+const wininfo = require('../data/driverwins.json')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -85,11 +86,11 @@ module.exports = {
         console.log(category)
         if (category === 'drivers-info') {
             let driveinformation = driverinfo[interaction.options.getString('driver')]
-            if(driveinformation.length > 2000 ) {
+            if (driveinformation.length > 2000) {
                 driveinformation = driveinformation.split("\n")
                 driveinformation.pop()
                 driveinformation = driveinformation.join("\n")
-            } 
+            }
             console.log(driveinformation)
             return interaction.reply(driveinformation)
         }
@@ -102,14 +103,26 @@ module.exports = {
         }
         if (category === 'championship-info') {
             const champinfo = driverstats[interaction.options.getString('year')].filter(driver => driver.name == interaction.options.getString('driver'))[0]
-            interaction.reply((champinfo.totalChampionshipWins > 0) ? `${interaction.options.getString('driver')} has won ${champinfo.totalChampionshipWins} championship${(champinfo.totalChampionshipWins > 1 ) ? "s" : ""}. In the year${(champinfo.totalChampionshipWins > 1 ) ? "s" : ""}:\n${driverc.filter(drivercyear => drivercyear.champion == interaction.options.getString("driver")).map(drivercyear => drivercyear.year).join("\n")}`
+            interaction.reply((champinfo.totalChampionshipWins > 0) ? `${interaction.options.getString('driver')} has won ${champinfo.totalChampionshipWins} championship${(champinfo.totalChampionshipWins > 1) ? "s" : ""} in the year${(champinfo.totalChampionshipWins > 1) ? "s" : ""}:\n${driverc.filter(drivercyear => drivercyear.champion == interaction.options.getString("driver")).map(drivercyear => drivercyear.year).join("\n")}`
                 : `No wins, but a highest finish of ${champinfo.bestChampionshipPosition} with a total of ${champinfo.totalChampionshipPoints} championship points`) // ${champinfo.totalChampionshipPoints>1 ? "s" : ""}
-        } else {
-            const message = `**${driver}** in **${year}**: data not implemented yet`;
-            await interaction.reply({ content: message });
+        // } else {
+        //     const message = `**${driver}** in **${year}**: data not implemented yet`;
+        //     await interaction.reply({ content: message }
+            // );
         }
+        if (category === 'wins-info') {
+            const driverName = interaction.options.getString('driver');
+            const winsinfo = wininfo.find(d => d.driver === driverName);
+            
+            if(!winsinfo) {
+                return interaction.repky('no data')
+            }
+            if (winsinfo.wins > 0) {
+                return interaction.reply(`${driverName} has won ${winsinfo.wins} race${winsinfo.wins > 1 ? 's' : ''}`);
+            } else {
+                return interaction.reply(`${driverName}  has not won a race`);
+            }
 
-
-
+        }
     }
 };
