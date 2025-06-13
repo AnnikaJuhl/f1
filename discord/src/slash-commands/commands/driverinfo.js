@@ -68,9 +68,7 @@ module.exports = {
                 }));
 
             await interaction.respond(filtered);
-        }
-
-
+            }
 
     },
 

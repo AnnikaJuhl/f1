@@ -1,6 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js')
 const drivers = require('../data/DRIVERc.json');
 const constructors = require('../data/CONSTRUCTORc.json');
+const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -46,20 +47,48 @@ module.exports = {
   async execute(interaction) {
     const year = parseInt(interaction.options.getString('year'));
     const type = interaction.options.getString('type');
-    let result, message;
+    let result;
+
+    const champEmbed = new EmbedBuilder()
+      .setColor(0x8b0000)
+      .setTitle(`Championship Results - ${year}`)
+      .setTimestamp()
+      .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
 
     if (type === 'driver') {
       result = drivers.find(d => d.year === year);
-      message = result?.champion
-        ? `**${year}** Driver Champion: **${result.champion} (${result.country})**`
-        : result?.note || 'No data found.';
+
+      if (result?.champion) {
+        champEmbed.addFields([
+        { name: 'Driver Champion', value: `${result.champion} (${result.country})`, inline: false } 
+      ]);
+      await interaction.reply({ embeds: [champEmbed] });
+      } else {
+        await interaction.reply(result?.note || 'No data')
+      }
 
     } else if (type === 'constructor') {
       result = constructors.find(c => c.year === year);
-      message = result?.constructor
-        ? `**${year}** Constructor Champion: **${result.constructor}**`
-        : result?.note || 'No data found.';
+
+if (result?.champion) {
+        champEmbed.addFields([
+        { name: 'Constructor Champion', value: `${result.champion} (${result.country})`, inline: false } 
+      ]);
+      await interaction.reply({ embeds: [champEmbed] });
+      } else {
+        await interaction.reply(result?.note || 'No data')
+      }
+
+      if (result?.champion) {
+        champEmbed.addFields([
+          { name: `${year} Driver Champion`, value: `${result.champion} (${result.country})`, inline: false },
+          { name: 'Team', value: result.team || 'Unknown', inline: true },
+        ]);
+        message = result?.champion
+          ? `** ${year} ** Constructor Champion: ** ${result.constructor} ** `
+          : result?.note || 'No data found.';
+      }
+      await interaction.reply({ embeds: [champEmbed] });
     }
-    await interaction.reply({ content: message });
   }
 };
