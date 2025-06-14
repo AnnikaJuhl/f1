@@ -51,8 +51,8 @@ module.exports = {
       let result;
 
       const champEmbed = new EmbedBuilder()
+        .setTitle(`Championship Results for ${year}`)
         .setColor(0x8b0000)
-        .setTitle(`Championship Results - ${year}`)
         .setTimestamp()
         .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
 
@@ -61,10 +61,10 @@ module.exports = {
 
         if (result?.champion) {
           champEmbed
+            .setDescription(`${result.champion} won the Drivers Championship in ${result.year}`)
             .setThumbnail(result.driverImage || null)
             .setAuthor({
               name: `${result.champion} (${result.country})`,
-              iconURL: result.countryFlag || null
             })
             .addFields(
               { name: 'Team', value: result.team || 'Unknown', inline: true },
@@ -84,39 +84,34 @@ module.exports = {
         }
 
         if (!result.team) {
-          const noChampionEmbed = new EmbedBuilder()
+          const noChampEmbed = new EmbedBuilder()
             .setColor(0x8b0000)
             .setTitle(`Constructor Championship - ${result.year}`)
             .setDescription(`The championship structure at the time focused solely on the individual driver standings and championships. No constructor championship existed until 1958.`)
             .setTimestamp()
-            .setTimestamp()
             .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
 
+          await interaction.reply({ embeds: [noChampEmbed] });
+        }
 
-  await interaction.reply({ embeds: [noChampionEmbed] });
-}
-
-champEmbed
-  .setThumbnail(result.logo || null)
-  .setAuthor({
-    name: `${result.team} (${result.country})`,
-    iconURL: result.flag || null
-  })
-  .addFields(
-    { name: 'Constructor Champion', value: result.team, inline: false },
-    { name: 'Country', value: result.country || 'Unknown', inline: true },
-    { name: 'Team Principal', value: result.team_principal || 'Unknown', inline: true },
-    { name: 'Drivers', value: result.drivers?.join(', ') || 'Unknown', inline: false }
-  );
-await interaction.reply({ embeds: [champEmbed] });
+        champEmbed
+          .setThumbnail(result.flag || null)
+          .setImage(result.logo)
+          .addFields(
+            { name: 'Constructor Champion', value: result.team, inline: false },
+            { name: 'Country', value: result.country || 'Unknown', inline: false },
+            { name: 'Team Principal', value: result.team_principal || 'Unknown', inline: true },
+            { name: 'Drivers', value: result.drivers?.join(', ') || 'Unknown', inline: false }
+          );
+        await interaction.reply({ embeds: [champEmbed] });
       } else {
-  await interaction.reply('No data found.');
-}
+        await interaction.reply('No data found.');
+      }
     } catch (err) {
-  console.error('Error executing command:', err);
-  if (!interaction.replied) {
-    await interaction.reply({ content: 'Something went wrong.', ephemeral: true });
-  }
-}
+      console.error('Error executing command:', err);
+      if (!interaction.replied) {
+        await interaction.reply({ content: 'Something went wrong.', ephemeral: true });
+      }
+    }
   }
 }

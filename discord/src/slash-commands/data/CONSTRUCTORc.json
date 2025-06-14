@@ -44,7 +44,7 @@
     "team": "Vanwall",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/79/Vanwall_badge.jpg",
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/vanwall-removebg-preview.png",
     "drivers": [],
     "team_principal": null
   },
@@ -53,8 +53,12 @@
     "team": "Cooper",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Cooper_logo.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Cooper_LOGO.png",
+    "drivers": [
+      "Jack Brabham",
+      "Bruce McLaren",
+      "Masten Gregory"
+    ],
     "team_principal": null
   },
   {
@@ -62,8 +66,11 @@
     "team": "Cooper",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Cooper_logo.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Cooper_LOGO.png",
+    "drivers": [
+      "Jack Brabham",
+      "Bruce McLaren"
+    ],
     "team_principal": null
   },
   {
@@ -71,8 +78,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Phil Hill", "Wolfgang von Trips", "Richie Ginther", "Giancarlo Baghetti"],
     "team_principal": "Jean Todt"
   },
   {
@@ -80,8 +87,8 @@
     "team": "BRM",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/BRM_logo.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/BRM.png",
+    "drivers": ["Graham Hill", "Richie Ginther"],
     "team_principal": null
   },
   {
@@ -89,8 +96,8 @@
     "team": "Lotus",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/lotus-f1-team-logo-png_seeklogo-445261.png",
+    "drivers": ["Jim Clark", "Trevor Taylor"],
     "team_principal": null
   },
   {
@@ -98,8 +105,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["John Surtees", "Lorenzo Bandini"],
     "team_principal": "Jean Todt"
   },
   {
@@ -107,8 +114,8 @@
     "team": "Lotus",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/lotus-f1-team-logo-png_seeklogo-445261.png",
+    "drivers": ["Jim Clark", "Mike Spence"],
     "team_principal": null
   },
   {
@@ -116,8 +123,8 @@
     "team": "Brabham",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/7/7b/Brabham_Racing_Organisation_logo.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/bg_f8f8f8-flat_750x_075_f-pad_750x1000_f8f8f8-removebg-preview.png",
+    "drivers": ["Jack Brabham", "Denny Hulme"],
     "team_principal": null
   },
   {
@@ -125,8 +132,8 @@
     "team": "Brabham",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/7/7b/Brabham_Racing_Organisation_logo.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/bg_f8f8f8-flat_750x_075_f-pad_750x1000_f8f8f8-removebg-preview.png",
+    "drivers": ["Denny Hulme", "Jack Brabham"],
     "team_principal": null
   },
   {
@@ -134,8 +141,8 @@
     "team": "Lotus",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/lotus-f1-team-logo-png_seeklogo-445261.png",
+    "drivers": ["Graham Hill", "Jackie Oliver"],
     "team_principal": null
   },
   {
@@ -143,8 +150,8 @@
     "team": "Matra",
     "country": "France",
     "flag": "https://flagcdn.com/w320/fr.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/Matra_Logo.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Matra.png",
+    "drivers": ["Jackie Stewart", "Jean-Pierre Beltoise"],
     "team_principal": null
   },
   {
@@ -152,8 +159,8 @@
     "team": "Lotus",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/lotus-f1-team-logo-png_seeklogo-445261.png",
+    "drivers": ["Jochen Rindt", "John Miles", "Emerson Fittipaldi"],
     "team_principal": null
   },
   {
@@ -161,8 +168,8 @@
     "team": "Tyrrell",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/8/89/Tyrrell_Racing_logo.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/tyrrell-racing-logo.png",
+    "drivers": ["Jackie Stewart", "François Cevert"],
     "team_principal": null
   },
   {
@@ -170,8 +177,8 @@
     "team": "Lotus",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/lotus-f1-team-logo-png_seeklogo-445261.png",
+    "drivers": ["Emerson Fittipaldi", "Dave Walker"],
     "team_principal": null
   },
   {
@@ -179,8 +186,8 @@
     "team": "Lotus",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/lotus-f1-team-logo-png_seeklogo-445261.png",
+    "drivers": ["Emerson Fittipaldi", "Ronnie Peterson"],
     "team_principal": null
   },
   {
@@ -188,8 +195,8 @@
     "team": "McLaren",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/McLaren_Racing_logo.svg.png",
+    "drivers": ["Emerson Fittipaldi", "Denny Hulme"],
     "team_principal": "Ron Dennis"
   },
   {
@@ -197,8 +204,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Niki Lauda", "Clay Regazzoni"],
     "team_principal": "Jean Todt"
   },
   {
@@ -206,8 +213,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Niki Lauda", "Clay Regazzoni", "Carlos Reutemann"],
     "team_principal": "Jean Todt"
   },
   {
@@ -215,8 +222,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Niki Lauda", "Carlos Reutemann"],
     "team_principal": "Jean Todt"
   },
   {
@@ -224,8 +231,8 @@
     "team": "Lotus",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/lotus-f1-team-logo-png_seeklogo-445261.png",
+    "drivers": ["Mario Andretti", "Ronnie Peterson", "Jean-Pierre Jarier"],
     "team_principal": null
   },
   {
@@ -233,8 +240,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Jody Scheckter", "Gilles Villeneuve"],
     "team_principal": "Jean Todt"
   },
   {
@@ -243,7 +250,7 @@
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
     "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
-    "drivers": [],
+    "drivers": ["Alan Jones", "Carlos Reutemann"],
     "team_principal": "Frank Williams"
   },
   {
@@ -252,7 +259,7 @@
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
     "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
-    "drivers": [],
+    "drivers": ["Alan Jones", "Carlos Reutemann"],
     "team_principal": "Frank Williams"
   },
   {
@@ -260,8 +267,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Didier Pironi", "Gilles Villeneuve", "Patrick Tambay", "Mario Andretti"],
     "team_principal": "Jean Todt"
   },
   {
@@ -269,8 +276,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Patrick Tambay", "René Arnoux"],
     "team_principal": "Jean Todt"
   },
   {
@@ -278,8 +285,8 @@
     "team": "McLaren",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/McLaren_Racing_logo.svg.png",
+    "drivers": ["Niki Lauda", "Alain Prost"],
     "team_principal": "Ron Dennis"
   },
   {
@@ -287,8 +294,8 @@
     "team": "McLaren",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/McLaren_Racing_logo.svg.png",
+    "drivers": ["Alain Prost", "Niki Lauda"],
     "team_principal": "Ron Dennis"
   },
   {
@@ -297,7 +304,7 @@
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
     "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
-    "drivers": [],
+    "drivers": ["Nigel Mansell", "Nelson Piquet"],
     "team_principal": "Frank Williams"
   },
   {
@@ -306,7 +313,7 @@
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
     "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
-    "drivers": [],
+    "drivers": ["Nigel Mansell", "Nelson Piquet"],
     "team_principal": "Frank Williams"
   },
   {
@@ -314,8 +321,8 @@
     "team": "McLaren",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/McLaren_Racing_logo.svg.png",
+    "drivers": ["Ayrton Senna", "Alain Prost"],
     "team_principal": "Ron Dennis"
   },
   {
@@ -323,8 +330,8 @@
     "team": "McLaren",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/McLaren_Racing_logo.svg.png",
+    "drivers": ["Ayrton Senna", "Alain Prost"],
     "team_principal": "Ron Dennis"
   },
   {
@@ -332,8 +339,8 @@
     "team": "McLaren",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/McLaren_Racing_logo.svg.png",
+    "drivers": ["Ayrton Senna", "Gerhard Berger"],
     "team_principal": "Ron Dennis"
   },
   {
@@ -341,8 +348,8 @@
     "team": "McLaren",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/McLaren_Racing_logo.svg.png",
+    "drivers": ["Ayrton Senna", "Gerhard Berger"],
     "team_principal": "Ron Dennis"
   },
   {
@@ -351,7 +358,7 @@
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
     "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
-    "drivers": [],
+    "drivers": ["Nigel Mansell", "Riccardo Patrese"],
     "team_principal": "Frank Williams"
   },
   {
@@ -360,7 +367,7 @@
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
     "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
-    "drivers": [],
+    "drivers": ["Alain Prost", "Damon Hill"],
     "team_principal": "Frank Williams"
   },
   {
@@ -369,7 +376,7 @@
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
     "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
-    "drivers": [],
+    "drivers": ["Damon Hill", "David Coulthard", "Nigel Mansell", "Ayrton Senna"],
     "team_principal": "Frank Williams"
   },
   {
@@ -377,8 +384,8 @@
     "team": "Benetton",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/b/b1/Benetton_Formula_logo.png",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/benetton-f1-logo.png",
+    "drivers": ["Michael Schumacher", "Johnny Herbert"],
     "team_principal": "Flavio Briatore"
   },
   {
@@ -387,7 +394,7 @@
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
     "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
-    "drivers": [],
+    "drivers": ["Damon Hill", "Jacques Villeneuve"],
     "team_principal": "Frank Williams"
   },
   {
@@ -396,7 +403,7 @@
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
     "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
-    "drivers": [],
+    "drivers": ["Jacques Villeneuve", "Heinz-Harald Frentzen"],
     "team_principal": "Frank Williams"
   },
   {
@@ -404,8 +411,8 @@
     "team": "McLaren",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/McLaren_Racing_logo.svg.png",
+    "drivers": ["Mika Häkkinen", "David Coulthard"],
     "team_principal": "Ron Dennis"
   },
   {
@@ -413,26 +420,17 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Eddie Irvine", "Michael Schumacher", "Mika Salo"],
     "team_principal": "Jean Todt"
   },
-  {
-    "year": 2000,
-    "team": "Ferrari",
-    "country": "Italy",
-    "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
-    "team_principal": "Jean Todt"
-  },
-  {
+{
     "year": 2001,
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Michael Schumacher", "Rubens Barrichello"],
     "team_principal": "Jean Todt"
   },
   {
@@ -440,8 +438,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Michael Schumacher", "Rubens Barrichello"],
     "team_principal": "Jean Todt"
   },
   {
@@ -449,8 +447,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Michael Schumacher", "Rubens Barrichello"],
     "team_principal": "Jean Todt"
   },
   {
@@ -458,8 +456,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Michael Schumacher", "Rubens Barrichello"],
     "team_principal": "Jean Todt"
   },
   {
@@ -467,8 +465,8 @@
     "team": "Renault",
     "country": "France",
     "flag": "https://flagcdn.com/w320/fr.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/7/71/Renault_F1_Team_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Renault_F1_Team_logo_2019.png",
+    "drivers": ["Fernando Alonso", "Giancarlo Fisichella"],
     "team_principal": "Flavio Briatore"
   },
   {
@@ -476,8 +474,8 @@
     "team": "Renault",
     "country": "France",
     "flag": "https://flagcdn.com/w320/fr.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/7/71/Renault_F1_Team_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Renault_F1_Team_logo_2019.png",
+    "drivers": ["Fernando Alonso", "Giancarlo Fisichella"],
     "team_principal": "Flavio Briatore"
   },
   {
@@ -485,8 +483,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Kimi Räikkönen", "Felipe Massa"],
     "team_principal": "Jean Todt"
   },
   {
@@ -494,8 +492,8 @@
     "team": "Ferrari",
     "country": "Italy",
     "flag": "https://flagcdn.com/w320/it.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Ferrari-Scuderia-Symbol.png",
+    "drivers": ["Kimi Räikkönen", "Felipe Massa"],
     "team_principal": "Jean Todt"
   },
   {
@@ -503,11 +501,8 @@
     "team": "Brawn GP",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/c/c2/Brawn_GP_logo.svg",
-    "drivers": [
-      "Jenson Button",
-      "Rubens Barrichello"
-    ],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/images.png",
+    "drivers": ["Jenson Button", "Rubens Barrichello"],
     "team_principal": "Ross Brawn"
   },
   {
@@ -515,11 +510,8 @@
     "team": "Red Bull Racing",
     "country": "Austria",
     "flag": "https://flagcdn.com/w320/at.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
-    "drivers": [
-      "Sebastian Vettel",
-      "Mark Webber"
-    ],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/red_bull_racing-logo-brandlogos.net_.png",
+    "drivers": ["Sebastian Vettel", "Mark Webber"],
     "team_principal": "Christian Horner"
   },
   {
@@ -527,8 +519,8 @@
     "team": "Red Bull Racing",
     "country": "Austria",
     "flag": "https://flagcdn.com/w320/at.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/red_bull_racing-logo-brandlogos.net_.png",
+    "drivers": ["Sebastian Vettel", "Mark Webber"],
     "team_principal": "Christian Horner"
   },
   {
@@ -536,8 +528,8 @@
     "team": "Red Bull Racing",
     "country": "Austria",
     "flag": "https://flagcdn.com/w320/at.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/red_bull_racing-logo-brandlogos.net_.png",
+    "drivers": ["Sebastian Vettel", "Mark Webber"],
     "team_principal": "Christian Horner"
   },
   {
@@ -545,8 +537,8 @@
     "team": "Red Bull Racing",
     "country": "Austria",
     "flag": "https://flagcdn.com/w320/at.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/red_bull_racing-logo-brandlogos.net_.png",
+    "drivers": ["Sebastian Vettel", "Mark Webber"],
     "team_principal": "Christian Horner"
   },
   {
@@ -554,8 +546,8 @@
     "team": "Mercedes",
     "country": "Germany",
     "flag": "https://flagcdn.com/w320/de.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/1200px-Mercedes_AMG_Petronas_F1_Logo.svg.png",
+    "drivers": ["Lewis Hamilton", "Nico Rosberg"],
     "team_principal": "Toto Wolff"
   },
   {
@@ -563,8 +555,8 @@
     "team": "Mercedes",
     "country": "Germany",
     "flag": "https://flagcdn.com/w320/de.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/1200px-Mercedes_AMG_Petronas_F1_Logo.svg.png",
+    "drivers": ["Lewis Hamilton", "Nico Rosberg"],
     "team_principal": "Toto Wolff"
   },
   {
@@ -572,8 +564,8 @@
     "team": "Mercedes",
     "country": "Germany",
     "flag": "https://flagcdn.com/w320/de.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/1200px-Mercedes_AMG_Petronas_F1_Logo.svg.png",
+    "drivers": ["Lewis Hamilton", "Nico Rosberg"],
     "team_principal": "Toto Wolff"
   },
   {
@@ -581,8 +573,8 @@
     "team": "Mercedes",
     "country": "Germany",
     "flag": "https://flagcdn.com/w320/de.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
-    "drivers": [],
+    "logo": "htthttps://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/1200px-Mercedes_AMG_Petronas_F1_Logo.svg.png",
+    "drivers": ["Lewis Hamilton", "Valtteri Bottas"],
     "team_principal": "Toto Wolff"
   },
   {
@@ -590,8 +582,8 @@
     "team": "Mercedes",
     "country": "Germany",
     "flag": "https://flagcdn.com/w320/de.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/1200px-Mercedes_AMG_Petronas_F1_Logo.svg.png",
+    "drivers": ["Lewis Hamilton", "Valtteri Bottas"],
     "team_principal": "Toto Wolff"
   },
   {
@@ -599,8 +591,8 @@
     "team": "Mercedes",
     "country": "Germany",
     "flag": "https://flagcdn.com/w320/de.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/1200px-Mercedes_AMG_Petronas_F1_Logo.svg.png",
+    "drivers": ["Lewis Hamilton", "Valtteri Bottas"],
     "team_principal": "Toto Wolff"
   },
   {
@@ -608,8 +600,8 @@
     "team": "Mercedes",
     "country": "Germany",
     "flag": "https://flagcdn.com/w320/de.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/1200px-Mercedes_AMG_Petronas_F1_Logo.svg.png",
+    "drivers": ["Lewis Hamilton", "Valtteri Bottas"],
     "team_principal": "Toto Wolff"
   },
   {
@@ -617,28 +609,19 @@
     "team": "Mercedes",
     "country": "Germany",
     "flag": "https://flagcdn.com/w320/de.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
-    "drivers": [],
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/1200px-Mercedes_AMG_Petronas_F1_Logo.svg.png",
+    "drivers": ["Lewis Hamilton", "Valtteri Bottas"],
     "team_principal": "Toto Wolff"
-  },
-  {
-    "year": 2022,
-    "team": "Red Bull Racing",
-    "country": "Austria",
-    "flag": "https://flagcdn.com/w320/at.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
-    "drivers": [],
-    "team_principal": "Christian Horner"
   },
   {
     "year": 2023,
     "team": "Red Bull Racing",
     "country": "Austria",
     "flag": "https://flagcdn.com/w320/at.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/red_bull_racing-logo-brandlogos.net_.png",
     "drivers": [
       "Max Verstappen",
-      "Sergio P\u00e9rez"
+      "Sergio Pérez"
     ],
     "team_principal": "Christian Horner"
   },
@@ -647,7 +630,7 @@
     "team": "McLaren",
     "country": "United Kingdom",
     "flag": "https://flagcdn.com/w320/gb.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
+    "logo": "https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/McLaren_Racing_logo.svg.png",
     "drivers": [
       "Lando Norris",
       "Oscar Piastri"
