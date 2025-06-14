@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('discord.js')
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
 const driverinfo = require('../data/driverInfo')
 const drivername = require('../data/driversByYearNames.json')
 const driverstats = require('../data/driversByYearFull.json')
@@ -41,7 +41,6 @@ module.exports = {
         const focusedValue = focusedOption.value;
         console.log('Focused Option:', focusedOption);
 
-
         if (focusedName === 'year') {
             const allYears = Object.keys(drivername).sort((a, b) => b - a);
             const filteredYears = allYears
@@ -78,6 +77,12 @@ module.exports = {
         const category = interaction.options.getString('category');
         const driversForYear = drivername[year] || [];
 
+        const driverInfo = new EmbedBuilder()
+        .setTitle(`Driver Information for ${drivername}`)
+        .setColor(191954)
+        .setTimestamp()
+        .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
+
         if (!driversForYear || !driversForYear.includes(driver)) {
             return await interaction.reply({ content: 'No data found' });
         }
@@ -89,8 +94,19 @@ module.exports = {
                 driveinformation.pop()
                 driveinformation = driveinformation.join("\n")
             }
-            console.log(driveinformation)
-            return interaction.reply(driveinformation)
+            driverInfo
+            .setDescription(`${result.driver} won the Drivers Championship in ${result.year}`)
+            .setThumbnail(result.driverImage || null)
+            .setAuthor({
+              name: `${result.champion} (${result.country})`,
+            })
+            .addFields(
+              { name: 'Team', value: result.team || 'Unknown', inline: true },
+              { name: 'Country', value: result.country || 'Unknown', inline: true }
+            );
+          await interaction.reply({ embeds: [champEmbed] });
+        } else {
+          await interaction.reply('No data found.');
         }
 
         if (category === 'stats-driver') {
@@ -113,7 +129,7 @@ module.exports = {
             const winsinfo = wininfo.find(d => d.driver === driverName);
             
             if(!winsinfo) {
-                return interaction.repky('no data')
+                return interaction.repy('no data')
             }
             if (winsinfo.wins > 0) {
                 return interaction.reply(`${driverName} has won ${winsinfo.wins} race${winsinfo.wins > 1 ? 's' : ''}`);
