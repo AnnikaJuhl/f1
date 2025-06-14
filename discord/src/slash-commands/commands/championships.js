@@ -45,50 +45,78 @@ module.exports = {
   },
 
   async execute(interaction) {
-    const year = parseInt(interaction.options.getString('year'));
-    const type = interaction.options.getString('type');
-    let result;
+    try {
+      const year = parseInt(interaction.options.getString('year'));
+      const type = interaction.options.getString('type');
+      let result;
 
-    const champEmbed = new EmbedBuilder()
-      .setColor(0x8b0000)
-      .setTitle(`Championship Results - ${year}`)
-      .setTimestamp()
-      .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
+      const champEmbed = new EmbedBuilder()
+        .setColor(0x8b0000)
+        .setTitle(`Championship Results - ${year}`)
+        .setTimestamp()
+        .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
 
-    if (type === 'driver') {
-      result = drivers.find(d => d.year === year);
+      if (type === 'driver') {
+        result = drivers.find(d => d.year === year);
 
-      if (result?.champion) {
-        champEmbed.addFields([
-        { name: 'Driver Champion', value: `${result.champion} (${result.country})`, inline: false } 
-      ]);
-      await interaction.reply({ embeds: [champEmbed] });
+        if (result?.champion) {
+          champEmbed
+            .setThumbnail(result.driverImage || null)
+            .setAuthor({
+              name: `${result.champion} (${result.country})`,
+              iconURL: result.countryFlag || null
+            })
+            .addFields(
+              { name: 'Team', value: result.team || 'Unknown', inline: true },
+              { name: 'Country', value: result.country || 'Unknown', inline: true }
+            );
+          await interaction.reply({ embeds: [champEmbed] });
+        } else {
+          await interaction.reply('No data found.');
+        }
+
+      } else if (type === 'constructor') {
+        result = constructors.find(c => c.year === year);
+
+        if (!result) {
+          await interaction.reply(`No constructor championship data found for ${year}.`);
+          return;
+        }
+
+        if (!result.team) {
+          const noChampionEmbed = new EmbedBuilder()
+            .setColor(0x8b0000)
+            .setTitle(`Constructor Championship - ${result.year}`)
+            .setDescription(`The championship structure at the time focused solely on the individual driver standings and championships. No constructor championship existed until 1958.`)
+            .setTimestamp()
+            .setTimestamp()
+            .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
+
+
+  await interaction.reply({ embeds: [noChampionEmbed] });
+}
+
+champEmbed
+  .setThumbnail(result.logo || null)
+  .setAuthor({
+    name: `${result.team} (${result.country})`,
+    iconURL: result.flag || null
+  })
+  .addFields(
+    { name: 'Constructor Champion', value: result.team, inline: false },
+    { name: 'Country', value: result.country || 'Unknown', inline: true },
+    { name: 'Team Principal', value: result.team_principal || 'Unknown', inline: true },
+    { name: 'Drivers', value: result.drivers?.join(', ') || 'Unknown', inline: false }
+  );
+await interaction.reply({ embeds: [champEmbed] });
       } else {
-        await interaction.reply(result?.note || 'No data')
-      }
-
-    } else if (type === 'constructor') {
-      result = constructors.find(c => c.year === year);
-
-if (result?.champion) {
-        champEmbed.addFields([
-        { name: 'Constructor Champion', value: `${result.champion} (${result.country})`, inline: false } 
-      ]);
-      await interaction.reply({ embeds: [champEmbed] });
-      } else {
-        await interaction.reply(result?.note || 'No data')
-      }
-
-      if (result?.champion) {
-        champEmbed.addFields([
-          { name: `${year} Driver Champion`, value: `${result.champion} (${result.country})`, inline: false },
-          { name: 'Team', value: result.team || 'Unknown', inline: true },
-        ]);
-        message = result?.champion
-          ? `** ${year} ** Constructor Champion: ** ${result.constructor} ** `
-          : result?.note || 'No data found.';
-      }
-      await interaction.reply({ embeds: [champEmbed] });
-    }
+  await interaction.reply('No data found.');
+}
+    } catch (err) {
+  console.error('Error executing command:', err);
+  if (!interaction.replied) {
+    await interaction.reply({ content: 'Something went wrong.', ephemeral: true });
   }
-};
+}
+  }
+}

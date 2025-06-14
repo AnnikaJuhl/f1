@@ -1,77 +1,657 @@
 [
-  {"year": 1950, "constructor": null, "note": "The championship structure at the time focused solely on the individual driver standings and no constructors championship existed until 1958."},
-  {"year": 1951, "constructor": null, "note": "The championship structure at the time focused solely on the individual driver standings and no constructors championship existed until 1958."},
-  {"year": 1952, "constructor": null, "note": "The championship structure at the time focused solely on the individual driver standings and no constructors championship existed until 1958."},
-  {"year": 1953, "constructor": null, "note": "The championship structure at the time focused solely on the individual driver standings and no constructors championship existed until 1958."},
-  {"year": 1954, "constructor": null, "note": "The championship structure at the time focused solely on the individual driver standings and no constructors championship existed until 1958."},
-  {"year": 1955, "constructor": null, "note": "The championship structure at the time focused solely on the individual driver standings and no constructors championship existed until 1958."},
-  {"year": 1956, "constructor": null, "note": "The championship structure at the time focused solely on the individual driver standings and no constructors championship existed until 1958."},
-  {"year": 1957, "constructor": null, "note": "The championship structure at the time focused solely on the individual driver standings and no constructors championship existed until 1958."},
-  {"year": 1958, "constructor": "Vanwall"},
-  {"year": 1959, "constructor": "Cooper"},
-  {"year": 1960, "constructor": "Cooper"},
-  {"year": 1961, "constructor": "Ferrari"},
-  {"year": 1962, "constructor": "BRM"},
-  {"year": 1963, "constructor": "Lotus"},
-  {"year": 1964, "constructor": "Ferrari"},
-  {"year": 1965, "constructor": "Lotus"},
-  {"year": 1966, "constructor": "Brabham"},
-  {"year": 1967, "constructor": "Brabham"},
-  {"year": 1968, "constructor": "Lotus"},
-  {"year": 1969, "constructor": "Matra"},
-  {"year": 1970, "constructor": "Lotus"},
-  {"year": 1971, "constructor": "Tyrrell"},
-  {"year": 1972, "constructor": "Lotus"},
-  {"year": 1973, "constructor": "Lotus"},
-  {"year": 1974, "constructor": "McLaren"},
-  {"year": 1975, "constructor": "Ferrari"},
-  {"year": 1976, "constructor": "Ferrari"},
-  {"year": 1977, "constructor": "Ferrari"},
-  {"year": 1978, "constructor": "Lotus"},
-  {"year": 1979, "constructor": "Ferrari"},
-  {"year": 1980, "constructor": "Williams"},
-  {"year": 1981, "constructor": "Williams"},
-  {"year": 1982, "constructor": "Ferrari"},
-  {"year": 1983, "constructor": "Ferrari"},
-  {"year": 1984, "constructor": "McLaren"},
-  {"year": 1985, "constructor": "McLaren"},
-  {"year": 1986, "constructor": "Williams"},
-  {"year": 1987, "constructor": "Williams"},
-  {"year": 1988, "constructor": "McLaren"},
-  {"year": 1989, "constructor": "McLaren"},
-  {"year": 1990, "constructor": "McLaren"},
-  {"year": 1991, "constructor": "McLaren"},
-  {"year": 1992, "constructor": "Williams"},
-  {"year": 1993, "constructor": "Williams"},
-  {"year": 1994, "constructor": "Williams"},
-  {"year": 1995, "constructor": "Benetton"},
-  {"year": 1996, "constructor": "Williams"},
-  {"year": 1997, "constructor": "Williams"},
-  {"year": 1998, "constructor": "McLaren"},
-  {"year": 1999, "constructor": "Ferrari"},
-  {"year": 2000, "constructor": "Ferrari"},
-  {"year": 2001, "constructor": "Ferrari"},
-  {"year": 2002, "constructor": "Ferrari"},
-  {"year": 2003, "constructor": "Ferrari"},
-  {"year": 2004, "constructor": "Ferrari"},
-  {"year": 2005, "constructor": "Renault"},
-  {"year": 2006, "constructor": "Renault"},
-  {"year": 2007, "constructor": "Ferrari"},
-  {"year": 2008, "constructor": "Ferrari"},
-  {"year": 2009, "constructor": "Brawn GP"},
-  {"year": 2010, "constructor": "Red Bull Racing"},
-  {"year": 2011, "constructor": "Red Bull Racing"},
-  {"year": 2012, "constructor": "Red Bull Racing"},
-  {"year": 2013, "constructor": "Red Bull Racing"},
-  {"year": 2014, "constructor": "Mercedes"},
-  {"year": 2015, "constructor": "Mercedes"},
-  {"year": 2016, "constructor": "Mercedes"},
-  {"year": 2017, "constructor": "Mercedes"},
-  {"year": 2018, "constructor": "Mercedes"},
-  {"year": 2019, "constructor": "Mercedes"},
-  {"year": 2020, "constructor": "Mercedes"},
-  {"year": 2021, "constructor": "Mercedes"},
-  {"year": 2022, "constructor": "Red Bull Racing"},
-  {"year": 2023, "constructor": "Red Bull Racing"},
-  {"year": 2024, "constructor": "McLaren"}
+  {
+    "year": 1950,
+    "team": null,
+    "note": "The championship structure at the time focused solely on the individual driver standings and no teams championship existed until 1958."
+  },
+  {
+    "year": 1951,
+    "team": null,
+    "note": "The championship structure at the time focused solely on the individual driver standings and no teams championship existed until 1958."
+  },
+  {
+    "year": 1952,
+    "team": null,
+    "note": "The championship structure at the time focused solely on the individual driver standings and no teams championship existed until 1958."
+  },
+  {
+    "year": 1953,
+    "team": null,
+    "note": "The championship structure at the time focused solely on the individual driver standings and no teams championship existed until 1958."
+  },
+  {
+    "year": 1954,
+    "team": null,
+    "note": "The championship structure at the time focused solely on the individual driver standings and no teams championship existed until 1958."
+  },
+  {
+    "year": 1955,
+    "team": null,
+    "note": "The championship structure at the time focused solely on the individual driver standings and no teams championship existed until 1958."
+  },
+  {
+    "year": 1956,
+    "team": null,
+    "note": "The championship structure at the time focused solely on the individual driver standings and no teams championship existed until 1958."
+  },
+  {
+    "year": 1957,
+    "team": null,
+    "note": "The championship structure at the time focused solely on the individual driver standings and no teams championship existed until 1958."
+  },
+  {
+    "year": 1958,
+    "team": "Vanwall",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/79/Vanwall_badge.jpg",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1959,
+    "team": "Cooper",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Cooper_logo.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1960,
+    "team": "Cooper",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Cooper_logo.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1961,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 1962,
+    "team": "BRM",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/BRM_logo.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1963,
+    "team": "Lotus",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1964,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 1965,
+    "team": "Lotus",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1966,
+    "team": "Brabham",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/7/7b/Brabham_Racing_Organisation_logo.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1967,
+    "team": "Brabham",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/7/7b/Brabham_Racing_Organisation_logo.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1968,
+    "team": "Lotus",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1969,
+    "team": "Matra",
+    "country": "France",
+    "flag": "https://flagcdn.com/w320/fr.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/Matra_Logo.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1970,
+    "team": "Lotus",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1971,
+    "team": "Tyrrell",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/8/89/Tyrrell_Racing_logo.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1972,
+    "team": "Lotus",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1973,
+    "team": "Lotus",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1974,
+    "team": "McLaren",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Ron Dennis"
+  },
+  {
+    "year": 1975,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 1976,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 1977,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 1978,
+    "team": "Lotus",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Team_Lotus_badge.png",
+    "drivers": [],
+    "team_principal": null
+  },
+  {
+    "year": 1979,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 1980,
+    "team": "Williams",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
+    "drivers": [],
+    "team_principal": "Frank Williams"
+  },
+  {
+    "year": 1981,
+    "team": "Williams",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
+    "drivers": [],
+    "team_principal": "Frank Williams"
+  },
+  {
+    "year": 1982,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 1983,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 1984,
+    "team": "McLaren",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Ron Dennis"
+  },
+  {
+    "year": 1985,
+    "team": "McLaren",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Ron Dennis"
+  },
+  {
+    "year": 1986,
+    "team": "Williams",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
+    "drivers": [],
+    "team_principal": "Frank Williams"
+  },
+  {
+    "year": 1987,
+    "team": "Williams",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
+    "drivers": [],
+    "team_principal": "Frank Williams"
+  },
+  {
+    "year": 1988,
+    "team": "McLaren",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Ron Dennis"
+  },
+  {
+    "year": 1989,
+    "team": "McLaren",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Ron Dennis"
+  },
+  {
+    "year": 1990,
+    "team": "McLaren",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Ron Dennis"
+  },
+  {
+    "year": 1991,
+    "team": "McLaren",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Ron Dennis"
+  },
+  {
+    "year": 1992,
+    "team": "Williams",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
+    "drivers": [],
+    "team_principal": "Frank Williams"
+  },
+  {
+    "year": 1993,
+    "team": "Williams",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
+    "drivers": [],
+    "team_principal": "Frank Williams"
+  },
+  {
+    "year": 1994,
+    "team": "Williams",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
+    "drivers": [],
+    "team_principal": "Frank Williams"
+  },
+  {
+    "year": 1995,
+    "team": "Benetton",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/b/b1/Benetton_Formula_logo.png",
+    "drivers": [],
+    "team_principal": "Flavio Briatore"
+  },
+  {
+    "year": 1996,
+    "team": "Williams",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
+    "drivers": [],
+    "team_principal": "Frank Williams"
+  },
+  {
+    "year": 1997,
+    "team": "Williams",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Williams_Grand_Prix_Engineering_logo.svg",
+    "drivers": [],
+    "team_principal": "Frank Williams"
+  },
+  {
+    "year": 1998,
+    "team": "McLaren",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Ron Dennis"
+  },
+  {
+    "year": 1999,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 2000,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 2001,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 2002,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 2003,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 2004,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 2005,
+    "team": "Renault",
+    "country": "France",
+    "flag": "https://flagcdn.com/w320/fr.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/7/71/Renault_F1_Team_logo.svg",
+    "drivers": [],
+    "team_principal": "Flavio Briatore"
+  },
+  {
+    "year": 2006,
+    "team": "Renault",
+    "country": "France",
+    "flag": "https://flagcdn.com/w320/fr.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/7/71/Renault_F1_Team_logo.svg",
+    "drivers": [],
+    "team_principal": "Flavio Briatore"
+  },
+  {
+    "year": 2007,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 2008,
+    "team": "Ferrari",
+    "country": "Italy",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Ferrari-Logo.svg",
+    "drivers": [],
+    "team_principal": "Jean Todt"
+  },
+  {
+    "year": 2009,
+    "team": "Brawn GP",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/c/c2/Brawn_GP_logo.svg",
+    "drivers": [
+      "Jenson Button",
+      "Rubens Barrichello"
+    ],
+    "team_principal": "Ross Brawn"
+  },
+  {
+    "year": 2010,
+    "team": "Red Bull Racing",
+    "country": "Austria",
+    "flag": "https://flagcdn.com/w320/at.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
+    "drivers": [
+      "Sebastian Vettel",
+      "Mark Webber"
+    ],
+    "team_principal": "Christian Horner"
+  },
+  {
+    "year": 2011,
+    "team": "Red Bull Racing",
+    "country": "Austria",
+    "flag": "https://flagcdn.com/w320/at.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Christian Horner"
+  },
+  {
+    "year": 2012,
+    "team": "Red Bull Racing",
+    "country": "Austria",
+    "flag": "https://flagcdn.com/w320/at.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Christian Horner"
+  },
+  {
+    "year": 2013,
+    "team": "Red Bull Racing",
+    "country": "Austria",
+    "flag": "https://flagcdn.com/w320/at.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Christian Horner"
+  },
+  {
+    "year": 2014,
+    "team": "Mercedes",
+    "country": "Germany",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
+    "drivers": [],
+    "team_principal": "Toto Wolff"
+  },
+  {
+    "year": 2015,
+    "team": "Mercedes",
+    "country": "Germany",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
+    "drivers": [],
+    "team_principal": "Toto Wolff"
+  },
+  {
+    "year": 2016,
+    "team": "Mercedes",
+    "country": "Germany",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
+    "drivers": [],
+    "team_principal": "Toto Wolff"
+  },
+  {
+    "year": 2017,
+    "team": "Mercedes",
+    "country": "Germany",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
+    "drivers": [],
+    "team_principal": "Toto Wolff"
+  },
+  {
+    "year": 2018,
+    "team": "Mercedes",
+    "country": "Germany",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
+    "drivers": [],
+    "team_principal": "Toto Wolff"
+  },
+  {
+    "year": 2019,
+    "team": "Mercedes",
+    "country": "Germany",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
+    "drivers": [],
+    "team_principal": "Toto Wolff"
+  },
+  {
+    "year": 2020,
+    "team": "Mercedes",
+    "country": "Germany",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
+    "drivers": [],
+    "team_principal": "Toto Wolff"
+  },
+  {
+    "year": 2021,
+    "team": "Mercedes",
+    "country": "Germany",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Mercedes-Benz_in_Motorsport_logo.svg",
+    "drivers": [],
+    "team_principal": "Toto Wolff"
+  },
+  {
+    "year": 2022,
+    "team": "Red Bull Racing",
+    "country": "Austria",
+    "flag": "https://flagcdn.com/w320/at.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
+    "drivers": [],
+    "team_principal": "Christian Horner"
+  },
+  {
+    "year": 2023,
+    "team": "Red Bull Racing",
+    "country": "Austria",
+    "flag": "https://flagcdn.com/w320/at.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Red_Bull_Racing_logo.svg",
+    "drivers": [
+      "Max Verstappen",
+      "Sergio P\u00e9rez"
+    ],
+    "team_principal": "Christian Horner"
+  },
+  {
+    "year": 2024,
+    "team": "McLaren",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/33/McLaren_Racing_logo.svg",
+    "drivers": [
+      "Lando Norris",
+      "Oscar Piastri"
+    ],
+    "team_principal": "Ron Dennis"
+  }
 ]
