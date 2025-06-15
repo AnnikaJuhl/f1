@@ -31,8 +31,8 @@ module.exports = {
                     { name: 'stats', value: 'stats-driver' },
                     { name: 'championships', value: 'championship-info' },
                     { name: 'wins', value: 'wins-info' },
-                    { name: 'seasons', value: 'seasons-info' },
-                    { name: 'teams', value: 'teams-info' }
+                    // { name: 'seasons', value: 'seasons-info' },
+                    // { name: 'teams', value: 'teams-info' }
                 )),
 
     async autocomplete(interaction) {
@@ -136,7 +136,6 @@ module.exports = {
             } else {
                 return interaction.reply(`${driverName}  has not won a race`);
             }
-
         }
     }
 };
