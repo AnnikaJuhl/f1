@@ -1,5 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js')
 const { EmbedBuilder } = require('discord.js');
+
 const info = require('../data/af1db-races.json')
 
 module.exports = {
@@ -54,7 +55,6 @@ module.exports = {
         if (focusedValue.name !== 'year') return;
         const allYears = [...new Set(info.map(item => item.year))].sort((a, b) => b - a);
         const filtered = allYears
-        console.log(`[Autocomplete] Filtered years:`, filtered)
             .filter(year => year.toString().startsWith(focusedValue.value))
             .slice(0, 25)
             .map(year => ({
@@ -69,7 +69,6 @@ module.exports = {
         try {
             const year = parseInt(interaction.options.getString('year'));
             const subcommand = interaction.options.getSubcommand();
-            let result;
 
             const seasonEmbed = new EmbedBuilder()
                 .setTitle(`Season information for ${year}`)
@@ -78,45 +77,35 @@ module.exports = {
                 .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
 
             if (subcommand === 'calendar') {
-                result = info.find(d => d.year === year);
+                const races = info.filter(d => d.year === year);
 
-                if (result?.calendar) {
-                    seasonEmbed
-                        .setDescription(`Here are all the races for ${year}`)
-
-                    await interaction.reply({ embeds: [champEmbed] });
-                } else {
-                    await interaction.reply('No data found.');
+                if (races.length === 0) {
+                    return await interaction.reply(`No races for ${year}`)
                 }
 
-            } else if (subcommand === 'standings') {
-                result = info.find(c => c.year === year);
+                const raceList = races
+                    .sort((a, b) => a.round - b.round)
+                    .map(race => {
+                        const date = new Date(race.date);
+                        const prettyDate = date.toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+                       return `**Race ${race.round}:** ${race.officialName} (${prettyDate})`;
+                    })
+                    .join('\n\n');
 
-                if (!result) {
-                    try {
-                        await interaction.reply(`No constructor championship data found for ${year}.`);
-                        return;
-                    }
+                seasonEmbed.setDescription(raceList);
 
-                    } else if (subcommand === 'race') {
-                    result = info.find(c => c.year === year);
+                return await interaction.reply({ embeds: [seasonEmbed] });
+            }
 
-                    if (!result) {
-                        try {
-                            await interaction.reply(`No constructor championship data found for ${year}.`);
-                            return;
-                        }
-
-
-
-                 } catch (err) {
-                        console.error('Error executing command:', err);
-                        if (!interaction.replied) {
-                            await interaction.reply({ content: 'Something went wrong.', ephemeral: true });
-                        }
-                    }
-                }
+        } catch (err) {
+            console.error('Error executing command:', err);
+            if (!interaction.replied) {
+                await interaction.reply({ content: 'Something went wrong.', ephemeral: true });
             }
         }
     }
-};
+}
