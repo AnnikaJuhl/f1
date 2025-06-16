@@ -2,6 +2,10 @@ const { SlashCommandBuilder } = require('discord.js')
 const { EmbedBuilder } = require('discord.js');
 
 const info = require('../data/af1db-races.json')
+const drivers = require('../data/af1db-seasons-driver-standings')
+
+const footer = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/carfooter.jpeg')
+// const constructor = require('../data/af1db-seasons-constructor-standings')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -24,7 +28,16 @@ module.exports = {
                     option.setName('year')
                         .setDescription('Select a year')
                         .setAutocomplete(true)
-                        .setRequired(true)))
+                        .setRequired(true))
+                .addStringOption(option =>
+                    option
+                        .setName('championship-type')
+                        .setDescription('Which championship do you want to see?')
+                        .addChoices(
+                            { name: 'Constructor', value: 'const-standing' },
+                            { name: 'Driver', value: 'driver-stand' }
+                        )
+                ))
         .addSubcommand(subcommand =>
             subcommand
                 .setName('race')
@@ -52,8 +65,13 @@ module.exports = {
 
     async autocomplete(interaction) {
         const focusedValue = interaction.options.getFocused(true);
+        console.log(focusedValue);
         if (focusedValue.name !== 'year') return;
-        const allYears = [...new Set(info.map(item => item.year))].sort((a, b) => b - a);
+        const allYears = [...new Set(info
+            .map(item => item.year))]
+            .filter(year => year !== undefined && year !== null)
+            .sort((a, b) => b - a);
+        console.log(allYears);
         const filtered = allYears
             .filter(year => year.toString().startsWith(focusedValue.value))
             .slice(0, 25)
@@ -92,13 +110,44 @@ module.exports = {
                             month: 'long',
                             day: 'numeric'
                         });
-                       return `**Race ${race.round}:** ${race.officialName} (${prettyDate})`;
+                        return `**Race ${race.round}:** ${race.officialName} (${prettyDate})`;
                     })
                     .join('\n\n');
 
                 seasonEmbed.setDescription(raceList);
 
                 return await interaction.reply({ embeds: [seasonEmbed] });
+            }
+
+            if (subcommand === 'standings') {
+                const type = interaction.options.getString('championship-type')
+
+                if (type === 'driver-stand') {
+                    const filteredDriver = drivers
+                        .filter(d => d.year === year)
+                        .sort((a, b) => a.positionNumber - b.positionNumber);
+
+                    if (filteredDriver.length === 0) {
+                        return await interaction.reply({ content: `No driver standings found for ${year}.`, ephemeral: true });
+
+                    }
+
+                    const standList = filteredDriver
+                        .map(driver => {
+                            const prettyName = driver.driverId
+                                .split('-')
+                                .map(part => part[0].toUpperCase() + part.slice(1))
+                                .join(' ');
+
+                            return `**Position ${driver.positionNumber}:** ${prettyName} with ${driver.points} point${(driver.points !== 1) ? "s" : ""}`;
+                        })
+                        .join('\n\n');
+
+                    seasonEmbed
+                    .setDescription(standList)
+                    .setImage(footer)
+                    return await interaction.reply({ embeds: [seasonEmbed] });
+                }
             }
 
         } catch (err) {
@@ -108,4 +157,4 @@ module.exports = {
             }
         }
     }
-}
+};
