@@ -1,11 +1,13 @@
-const { SlashCommandBuilder } = require('discord.js')
-const { EmbedBuilder } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
 
 const info = require('../data/af1db-races.json')
 const drivers = require('../data/af1db-seasons-driver-standings')
+const constructor = require('../data/af1db-seasons-constructor-standings')
+const pit = require('../data/f1db-races-pit-stops')
 
 const footer = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/carfooter.jpeg')
-// const constructor = require('../data/af1db-seasons-constructor-standings')
+const footers = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Landscapetrack.jpeg')
+const logo = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/main/formula1logo.jpg')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -43,11 +45,6 @@ module.exports = {
                 .setName('race')
                 .setDescription('View detailed info about a specific race')
                 .addStringOption(option =>
-                    option.setName('year')
-                        .setDescription('Select a year')
-                        .setAutocomplete(true)
-                        .setRequired(true))
-                .addStringOption(option =>
                     option.setName('session')
                         .setDescription('Choose a race')
                         .setAutocomplete(true)
@@ -58,47 +55,58 @@ module.exports = {
                         .setRequired(true)
                         .addChoices(
                             { name: 'Track Info', value: 'track-info' },
-                            { name: 'Race Incidents', value: 'race-incidents' },
+                            { name: 'Pit Sstops', value: 'pit-stops' },
                             { name: 'Standings', value: 'standings' }
                         )
                 )),
 
     async autocomplete(interaction) {
         const focusedValue = interaction.options.getFocused(true);
-        console.log(focusedValue);
-        if (focusedValue.name !== 'year') return;
-        const allYears = [...new Set(info
-            .map(item => item.year))]
-            .filter(year => year !== undefined && year !== null)
-            .sort((a, b) => b - a);
-        console.log(allYears);
-        const filtered = allYears
-            .filter(year => year.toString().startsWith(focusedValue.value))
-            .slice(0, 25)
-            .map(year => ({
-                name: year.toString(),
-                value: year.toString()
-            }));
 
-        await interaction.respond(filtered);
+        if (focusedValue.name === 'year') {
+            const allYears = [...new Set(info
+                .map(item => item.year))]
+                .filter(year => year !== undefined && year !== null)
+                .sort((a, b) => b - a);
+
+            const filtered = allYears
+                .filter(year => year.toString().startsWith(focusedValue.value))
+                .slice(0, 25)
+                .map(year => ({
+                    name: year.toString(),
+                    value: year.toString()
+                }));
+
+            return interaction.respond(filtered);
+
+        } else if (focusedValue.name === 'session') {
+            const allRaces = [...new Set(info
+                .map(item => item.grandPrixId))]
+                .filter(id => id !== undefined && id !== null)
+                .sort();
+
+            const filtered = allRaces
+                .filter(race => race.toLowerCase().startsWith(focusedValue.value.toLowerCase()))
+                .slice(0, 25)
+                .map(race => ({
+                    name: race,
+                    value: race
+                }));
+
+            return interaction.respond(filtered);
+        }
     },
 
     async execute(interaction) {
         try {
-            const year = parseInt(interaction.options.getString('year'));
             const subcommand = interaction.options.getSubcommand();
 
-            const seasonEmbed = new EmbedBuilder()
-                .setTitle(`Season information for ${year}`)
-                .setColor(0x8b0000)
-                .setTimestamp()
-                .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
-
             if (subcommand === 'calendar') {
+                const year = parseInt(interaction.options.getString('year'));
                 const races = info.filter(d => d.year === year);
 
                 if (races.length === 0) {
-                    return await interaction.reply(`No races for ${year}`)
+                    return interaction.reply(`No races for ${year}`);
                 }
 
                 const raceList = races
@@ -114,13 +122,21 @@ module.exports = {
                     })
                     .join('\n\n');
 
-                seasonEmbed.setDescription(raceList);
+                const seasonEmbed = new EmbedBuilder()
+                    .setThumbnail(logo)
+                    .setTitle(`Season calendar for ${year}`)
+                    .setColor('000435')
+                    .setDescription(raceList)
+                    .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
+                    .setImage(footers)
+                    .setTimestamp();
 
                 return await interaction.reply({ embeds: [seasonEmbed] });
             }
 
             if (subcommand === 'standings') {
-                const type = interaction.options.getString('championship-type')
+                const year = parseInt(interaction.options.getString('year'));
+                const type = interaction.options.getString('championship-type');
 
                 if (type === 'driver-stand') {
                     const filteredDriver = drivers
@@ -128,7 +144,7 @@ module.exports = {
                         .sort((a, b) => a.positionNumber - b.positionNumber);
 
                     if (filteredDriver.length === 0) {
-                        return await interaction.reply({ content: `No driver standings found for ${year}.`, ephemeral: true });
+                        return interaction.reply({ content: `No driver standings found for ${year}.`, ephemeral: true });
 
                     }
 
@@ -143,18 +159,75 @@ module.exports = {
                         })
                         .join('\n\n');
 
-                    seasonEmbed
-                    .setDescription(standList)
-                    .setImage(footer)
-                    return await interaction.reply({ embeds: [seasonEmbed] });
+                    const standEmbed = new EmbedBuilder()
+                        .setThumbnail(logo)
+                        .setTitle(`Standings for ${year}`)
+                        .setColor('000435')
+                        .setDescription(standList)
+                        .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
+                        .setImage(footers)
+                        .setTimestamp();
+
+                    return interaction.reply({ embeds: [standEmbed] });
+                }
+
+                if (type === 'const-standing') {
+                    const filteredConst = constructor
+                        .filter(d => d.year === year)
+                        .sort((a, b) => a.positionNumber - b.positionNumber);
+
+                    if (filteredConst.length === 0) {
+                        return await interaction.reply({ content: `No constructor standings found for ${year}.`, ephemeral: true });
+                    }
+                    const standList = filteredConst
+                        .map(constructors => {
+                            const prettyName = constructors.constructorId
+                                .split('-')
+                                .map(part => part[0].toUpperCase() + part.slice(1))
+                                .join(' ');
+
+                            return `**Position ${constructors.positionNumber}:** ${prettyName} with ${constructors.points} point${(constructors.points !== 1) ? "s" : ""}`;
+                        })
+                        .join('\n\n');
+                    standEmbed
+                        .setDescription('standList')
+                    return interaction.reply({ embeds: [standEmbed] });
                 }
             }
 
-        } catch (err) {
-            console.error('Error executing command:', err);
-            if (!interaction.replied) {
-                await interaction.reply({ content: 'Something went wrong.', ephemeral: true });
+            if (subcommand === 'race') {
+                const sessionId = interaction.options.getString('session');
+                const detail = interaction.options.getString('detail');
+
+                const race = info.find(races => races.grandPrixId === sessionId);
+
+                if (!race) {
+                    return interaction.reply({ content: `No race found with session ID "${sessionId}".`, ephemeral: true });
+                }
+
+                const raceEmbed = new EmbedBuilder()
+                    .setTitle(`Season information for ${year}`)
+                    .setColor(0x8b0000)
+                    .setTimestamp()
+                    .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
+
+                if (detail === 'track-info') {
+                    embed.setDescription(`Track: ${race.circuitName}\nLocation: ${race.location}\nLaps: ${race.laps}\nDate: ${race.date}`);
+
+                } else if (detail === 'pit-stops') {
+                    const stops = pit
+                        .filter(pit => pit.raceId === race.raceId);
+                    embed.setDescription(`${stops.length} pit stops were recorded at ${race.circuitName}.`);
+                }
+                // } else if (detail === 'standings') {
+                // }
+                return interaction.reply({ embeds: [raceEmbed] });
+            }   
+          }  catch (err) {
+                console.error('Error executing command:', err);
+                if (!interaction.replied) {
+                    await interaction.reply({ content: 'Something went wrong.', ephemeral: true });
+                }
             }
         }
-    }
-};
+    };
