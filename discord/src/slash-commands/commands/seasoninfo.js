@@ -45,6 +45,12 @@ module.exports = {
                 .setName('race')
                 .setDescription('View detailed info about a specific race')
                 .addStringOption(option =>
+                    option
+                        .setName('year')
+                        .setDescription('Select the year you want to learn about!')
+                        .setAutocomplete(true)
+                        .setRequired(true))
+                .addStringOption(option =>
                     option.setName('session')
                         .setDescription('Choose a race')
                         .setAutocomplete(true)
@@ -168,7 +174,7 @@ module.exports = {
                         .setImage(footers)
                         .setTimestamp();
 
-                    return interaction.reply({ embeds: [standEmbed] });
+                    await interaction.reply({ embeds: [standEmbed] });
                 }
 
                 if (type === 'const-standing') {
@@ -189,14 +195,17 @@ module.exports = {
                             return `**Position ${constructors.positionNumber}:** ${prettyName} with ${constructors.points} point${(constructors.points !== 1) ? "s" : ""}`;
                         })
                         .join('\n\n');
+
                     standEmbed
                         .setDescription('standList')
-                    return interaction.reply({ embeds: [standEmbed] });
+
+                    await interaction.reply({ embeds: [standEmbed] });
                 }
             }
 
             if (subcommand === 'race') {
                 const sessionId = interaction.options.getString('session');
+                const year = parseInt(interaction.options.getString('year'));
                 const detail = interaction.options.getString('detail');
 
                 const race = info.find(races => races.grandPrixId === sessionId);
@@ -212,22 +221,26 @@ module.exports = {
                     .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
 
                 if (detail === 'track-info') {
-                    embed.setDescription(`Track: ${race.circuitName}\nLocation: ${race.location}\nLaps: ${race.laps}\nDate: ${race.date}`);
+                    raceEmbed
+                        .setDescription(`Track: ${race.circuitName}\nLocation: ${race.location}\nLaps: ${race.laps}\nDate: ${race.date}`);
 
                 } else if (detail === 'pit-stops') {
                     const stops = pit
                         .filter(pit => pit.raceId === race.raceId);
-                    embed.setDescription(`${stops.length} pit stops were recorded at ${race.circuitName}.`);
+                    raceEmbed
+                        .setDescription(`${stops.length} pit stops were recorded at ${race.circuitName}.`);
                 }
                 // } else if (detail === 'standings') {
+                // raceEmbed
+                // .setDescription('')
                 // }
                 return interaction.reply({ embeds: [raceEmbed] });
-            }   
-          }  catch (err) {
-                console.error('Error executing command:', err);
-                if (!interaction.replied) {
-                    await interaction.reply({ content: 'Something went wrong.', ephemeral: true });
-                }
+            }
+        } catch (err) {
+            console.error('Error executing command:', err);
+            if (!interaction.replied) {
+                await interaction.reply({ content: 'Something went wrong.', ephemeral: true });
             }
         }
-    };
+    }
+};
