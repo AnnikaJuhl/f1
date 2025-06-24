@@ -1,0 +1,13 @@
+<h1>An error occurred</h1><pre>Traceback (most recent call last):
+  File "/app/src/openf1/services/query_api/app.py", line 106, in endpoint
+    return await _process_request(request, path)
+  File "/app/src/openf1/services/query_api/app.py", line 80, in _process_request
+    query_params = parse_query_params(request.query_params)
+  File "/app/src/openf1/services/query_api/query_params.py", line 146, in parse_query_params
+    query_params = sum((_str_to_query_params(s) for s in query_params_str), [])
+  File "/app/src/openf1/services/query_api/query_params.py", line 146, in <genexpr>
+    query_params = sum((_str_to_query_params(s) for s in query_params_str), [])
+  File "/app/src/openf1/services/query_api/query_params.py", line 133, in _str_to_query_params
+    raise ValueError(f"No valid operator found in `{s}`.")
+ValueError: No valid operator found in `year`.
+</pre>

@@ -8,6 +8,7 @@ services:
       - ./discord:/app
     depends_on:
       - mongo
+      - openf1
   mongo:
     image: mongo:7
     restart: unless-stopped
@@ -16,3 +17,13 @@ services:
     volumes:
       - ./storage/mongo/data:/data/db
       - ./storage/mongo/config:/data/configdb
+  openf1:
+    build: 
+      context: ./openf1
+      dockerfile: Dockerfile
+    environment: 
+      - MONGO_CONNECTION_STRING=mongodb://mongo:27017
+    # volumes:
+    restart: unless-stopped
+    ports: 
+      - "8000:8000"

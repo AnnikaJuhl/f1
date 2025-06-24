@@ -3,11 +3,13 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
 const info = require('../data/af1db-races.json')
 const drivers = require('../data/af1db-seasons-driver-standings')
 const constructor = require('../data/af1db-seasons-constructor-standings')
-const pit = require('../data/f1db-races-pit-stops')
+const races = require('../data/aracestandings')
 
 const footer = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/carfooter.jpeg')
 const footers = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Landscapetrack.jpeg')
 const logo = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/main/formula1logo.jpg')
+
+const liveSeason = require('./liveseason')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -33,36 +35,16 @@ module.exports = {
                         .setRequired(true))
                 .addStringOption(option =>
                     option
+                        .setName('race')
+                        .setDescription('View standings for a specific race')
+                        .setAutocomplete(true))
+                .addStringOption(option =>
+                    option
                         .setName('championship-type')
                         .setDescription('Which championship do you want to see?')
                         .addChoices(
                             { name: 'Constructor', value: 'const-standing' },
                             { name: 'Driver', value: 'driver-stand' }
-                        )
-                ))
-        .addSubcommand(subcommand =>
-            subcommand
-                .setName('race')
-                .setDescription('View detailed info about a specific race')
-                .addStringOption(option =>
-                    option
-                        .setName('year')
-                        .setDescription('Select the year you want to learn about!')
-                        .setAutocomplete(true)
-                        .setRequired(true))
-                .addStringOption(option =>
-                    option.setName('session')
-                        .setDescription('Choose a race')
-                        .setAutocomplete(true)
-                        .setRequired(true))
-                .addStringOption(option =>
-                    option.setName('detail')
-                        .setDescription('Pick the type of race detail')
-                        .setRequired(true)
-                        .addChoices(
-                            { name: 'Track Info', value: 'track-info' },
-                            { name: 'Pit Sstops', value: 'pit-stops' },
-                            { name: 'Standings', value: 'standings' }
                         )
                 )),
 
@@ -114,6 +96,10 @@ module.exports = {
                 if (races.length === 0) {
                     return interaction.reply(`No races for ${year}`);
                 }
+
+                if (year === 2025 ) {
+                    return liveSeason.execute(interaction);
+                } 
 
                 const raceList = races
                     .sort((a, b) => a.round - b.round)
@@ -203,11 +189,9 @@ module.exports = {
                 }
             }
 
-            if (subcommand === 'race') {
-                const sessionId = interaction.options.getString('session');
+            if (type === 'race') {
+                // const sessionId = interaction.options.getString('session');
                 const year = parseInt(interaction.options.getString('year'));
-                const detail = interaction.options.getString('detail');
-
                 const race = info.find(races => races.grandPrixId === sessionId);
 
                 if (!race) {
@@ -220,20 +204,6 @@ module.exports = {
                     .setTimestamp()
                     .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
 
-                if (detail === 'track-info') {
-                    raceEmbed
-                        .setDescription(`Track: ${race.circuitName}\nLocation: ${race.location}\nLaps: ${race.laps}\nDate: ${race.date}`);
-
-                } else if (detail === 'pit-stops') {
-                    const stops = pit
-                        .filter(pit => pit.raceId === race.raceId);
-                    raceEmbed
-                        .setDescription(`${stops.length} pit stops were recorded at ${race.circuitName}.`);
-                }
-                // } else if (detail === 'standings') {
-                // raceEmbed
-                // .setDescription('')
-                // }
                 return interaction.reply({ embeds: [raceEmbed] });
             }
         } catch (err) {
