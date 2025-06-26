@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, AutocompleteInteraction } = require('discord.js')
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
 // const { autocomplete } = require('./championships');
 // const driverinfo = require('../data/f1_driver_descriptions')
 const years = require('../data/driversByYearNames.json')

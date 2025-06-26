@@ -26,7 +26,7 @@ module.exports = {
     ),
 
   async autocomplete(interaction) {
-    const focusedValue = interaction.options.getFocused(true);
+    const focusedValue = interaction.options.getFocused(true );
     console.log('Focused Option:', focusedValue);
     if (focusedValue.name !== 'year') return;
     const driverYears = drivers.map(d => d.year);

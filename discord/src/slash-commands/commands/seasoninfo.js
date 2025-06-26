@@ -7,7 +7,7 @@ const races = require('../data/aracestandings')
 
 const footer = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/carfooter.jpeg')
 const footers = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Landscapetrack.jpeg')
-const logo = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/main/formula1logo.jpg')
+const logo = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/f1-abu-dhabi-gp-2017-f1-logo-6614911-removebg-preview.png')
 
 const liveSeason = require('./liveseason')
 
@@ -40,11 +40,11 @@ module.exports = {
                         .setAutocomplete(true))
                 .addStringOption(option =>
                     option
-                        .setName('championship-type')
+                        .setName('championship')
                         .setDescription('Which championship do you want to see?')
                         .addChoices(
-                            { name: 'Constructor', value: 'const-standing' },
-                            { name: 'Driver', value: 'driver-stand' }
+                            { name: 'Driver', value: 'driver-stand' },
+                            { name: 'Constructor', value: 'const-standing' }
                         )
                 )),
 
@@ -128,7 +128,7 @@ module.exports = {
 
             if (subcommand === 'standings') {
                 const year = parseInt(interaction.options.getString('year'));
-                const type = interaction.options.getString('championship-type');
+                const type = interaction.options.getString('championship');
 
                 if (type === 'driver-stand') {
                     const filteredDriver = drivers
@@ -161,12 +161,21 @@ module.exports = {
                         .setTimestamp();
 
                     await interaction.reply({ embeds: [standEmbed] });
-                }
+
 
                 if (type === 'const-standing') {
                     const filteredConst = constructor
                         .filter(d => d.year === year)
                         .sort((a, b) => a.positionNumber - b.positionNumber);
+
+                        const constEmbed = new EmbedBuilder()
+                    .setThumbnail(logo)
+                    .setTitle(`Season calendar for ${year}`)
+                    .setColor('000435')
+                    .setDescription(raceList)
+                    .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
+                    .setImage(footers)
+                    .setTimestamp();
 
                     if (filteredConst.length === 0) {
                         return await interaction.reply({ content: `No constructor standings found for ${year}.`, ephemeral: true });
@@ -182,10 +191,11 @@ module.exports = {
                         })
                         .join('\n\n');
 
-                    standEmbed
+                    constEmbed
+
                         .setDescription('standList')
 
-                    await interaction.reply({ embeds: [standEmbed] });
+                    await interaction.reply({ embeds: [constEmbed] });
                 }
             }
 
@@ -206,6 +216,8 @@ module.exports = {
 
                 return interaction.reply({ embeds: [raceEmbed] });
             }
+        }
+
         } catch (err) {
             console.error('Error executing command:', err);
             if (!interaction.replied) {

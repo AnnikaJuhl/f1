@@ -28,10 +28,10 @@ module.exports = {
                 .setDescription('Select what category you want to learn about!')
                 .setRequired(true)
                 .addChoices(
-                    { name: 'info', value: 'drivers-info' },
-                    { name: 'stats', value: 'stats-driver' },
-                    { name: 'championships', value: 'championship-info' },
-                    { name: 'wins', value: 'wins-info' },
+                    { name: 'Info', value: 'drivers-info' },
+                    { name: 'Stats', value: 'stats-driver' },
+                    { name: 'Championships', value: 'championship-info' },
+                    { name: 'Wins', value: 'wins-info' },
                     // { name: 'seasons', value: 'seasons-info' },
                     // { name: 'teams', value: 'teams-info' }
                 )),

@@ -1,4 +1,4 @@
-const { EmbedBuuilder } = require('discord.js')
+const { EmbedBuilder } = require('discord.js')
 const fetch = require('node-fetch')
 
 const logo = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/main/formula1logo.jpg')
