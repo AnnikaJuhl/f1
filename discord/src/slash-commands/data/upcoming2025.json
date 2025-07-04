@@ -1,0 +1,357 @@
+[
+  {
+    "event_name": "FORMULA 1 LENOVO HUNGARIAN GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-08-01T11:30:00Z",
+    "end_time": "2025-08-01T12:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2025 - Practice 2",
+    "start_time": "2025-10-03T13:00:00Z",
+    "end_time": "2025-10-03T14:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2025 - Race",
+    "start_time": "2025-11-09T17:00:00Z",
+    "end_time": "2025-11-09T19:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2025 - Race",
+    "start_time": "2025-12-07T13:00:00Z",
+    "end_time": "2025-12-07T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2025 - Race",
+    "start_time": "2025-11-30T16:00:00Z",
+    "end_time": "2025-11-30T18:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2025 - Sprint Race",
+    "start_time": "2025-11-29T14:00:00Z",
+    "end_time": "2025-11-29T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2025 - Sprint Qualification",
+    "start_time": "2025-11-28T17:30:00Z",
+    "end_time": "2025-11-28T18:14:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 LENOVO HUNGARIAN GRAND PRIX 2025 - Practice 2",
+    "start_time": "2025-08-01T15:00:00Z",
+    "end_time": "2025-08-01T16:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 LENOVO HUNGARIAN GRAND PRIX 2025 - Practice 3",
+    "start_time": "2025-08-02T10:30:00Z",
+    "end_time": "2025-08-02T11:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 LENOVO HUNGARIAN GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-08-02T14:00:00Z",
+    "end_time": "2025-08-02T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 LENOVO HUNGARIAN GRAND PRIX 2025 - Race",
+    "start_time": "2025-08-03T13:00:00Z",
+    "end_time": "2025-08-03T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2025 - Practice 1",
+    "start_time": "2025-09-05T11:30:00Z",
+    "end_time": "2025-09-05T12:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2025 - Practice 2",
+    "start_time": "2025-09-05T15:00:00Z",
+    "end_time": "2025-09-05T16:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2025 - Practice 3",
+    "start_time": "2025-09-06T10:30:00Z",
+    "end_time": "2025-09-06T11:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2025 - Qualifying",
+    "start_time": "2025-09-06T14:00:00Z",
+    "end_time": "2025-09-06T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2025 - Race",
+    "start_time": "2025-09-07T13:00:00Z",
+    "end_time": "2025-09-07T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-07-04T11:30:00Z",
+    "end_time": "2025-07-04T12:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2025 - Practice 2",
+    "start_time": "2025-07-04T15:00:00Z",
+    "end_time": "2025-07-04T16:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2025 - Practice 3",
+    "start_time": "2025-07-05T10:30:00Z",
+    "end_time": "2025-07-05T11:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-07-05T14:00:00Z",
+    "end_time": "2025-07-05T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2025 - Race",
+    "start_time": "2025-07-06T14:00:00Z",
+    "end_time": "2025-07-06T16:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES AUSTRIAN GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-06-27T11:30:00Z",
+    "end_time": "2025-06-27T12:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES AUSTRIAN GRAND PRIX 2025 - Practice 2",
+    "start_time": "2025-06-27T15:00:00Z",
+    "end_time": "2025-06-27T16:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES AUSTRIAN GRAND PRIX 2025 - Practice 3",
+    "start_time": "2025-06-28T10:30:00Z",
+    "end_time": "2025-06-28T11:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES AUSTRIAN GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-06-28T14:00:00Z",
+    "end_time": "2025-06-28T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES AUSTRIAN GRAND PRIX 2025 - Race",
+    "start_time": "2025-06-29T13:00:00Z",
+    "end_time": "2025-06-29T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2025 - Practice 1",
+    "start_time": "2025-10-24T18:30:00Z",
+    "end_time": "2025-10-24T19:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2025 - Practice 2",
+    "start_time": "2025-10-24T22:00:00Z",
+    "end_time": "2025-10-24T23:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2025 - Practice 3",
+    "start_time": "2025-10-25T17:30:00Z",
+    "end_time": "2025-10-25T18:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2025 - Qualifying",
+    "start_time": "2025-10-25T21:00:00Z",
+    "end_time": "2025-10-25T22:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2025 - Race",
+    "start_time": "2025-10-26T20:00:00Z",
+    "end_time": "2025-10-26T22:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-07-25T10:30:00Z",
+    "end_time": "2025-07-25T11:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2025 - Sprint Qualification",
+    "start_time": "2025-07-25T14:30:00Z",
+    "end_time": "2025-07-25T15:14:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2025 - Sprint Race",
+    "start_time": "2025-07-26T10:00:00Z",
+    "end_time": "2025-07-26T11:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-07-26T14:00:00Z",
+    "end_time": "2025-07-26T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2025 - Race",
+    "start_time": "2025-07-27T13:00:00Z",
+    "end_time": "2025-07-27T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-08-29T10:30:00Z",
+    "end_time": "2025-08-29T11:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2025 - Practice 2",
+    "start_time": "2025-08-29T14:00:00Z",
+    "end_time": "2025-08-29T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2025 - Practice 3",
+    "start_time": "2025-08-30T09:30:00Z",
+    "end_time": "2025-08-30T10:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-08-30T13:00:00Z",
+    "end_time": "2025-08-30T14:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2025 - Race",
+    "start_time": "2025-08-31T13:00:00Z",
+    "end_time": "2025-08-31T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-09-19T08:30:00Z",
+    "end_time": "2025-09-19T09:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2025 - Practice 2",
+    "start_time": "2025-09-19T12:00:00Z",
+    "end_time": "2025-09-19T13:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2025 - Practice 3",
+    "start_time": "2025-09-20T08:30:00Z",
+    "end_time": "2025-09-20T09:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-09-20T12:00:00Z",
+    "end_time": "2025-09-20T13:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2025 - Race",
+    "start_time": "2025-09-21T11:00:00Z",
+    "end_time": "2025-09-21T13:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-10-03T09:30:00Z",
+    "end_time": "2025-10-03T10:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2025 - Practice 3",
+    "start_time": "2025-10-04T09:30:00Z",
+    "end_time": "2025-10-04T10:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-10-04T13:00:00Z",
+    "end_time": "2025-10-04T14:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2025 - Race",
+    "start_time": "2025-10-05T12:00:00Z",
+    "end_time": "2025-10-05T14:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2025 - Practice 1",
+    "start_time": "2025-11-07T14:30:00Z",
+    "end_time": "2025-11-07T15:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2025 - Qualifying",
+    "start_time": "2025-11-08T18:00:00Z",
+    "end_time": "2025-11-08T19:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2025 - Sprint Race",
+    "start_time": "2025-11-08T14:00:00Z",
+    "end_time": "2025-11-08T15:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2025 - Sprint Qualification",
+    "start_time": "2025-11-07T18:30:00Z",
+    "end_time": "2025-11-07T19:14:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-10-18T21:00:00Z",
+    "end_time": "2025-10-18T22:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-10-17T17:30:00Z",
+    "end_time": "2025-10-17T18:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2025 - Race",
+    "start_time": "2025-10-19T19:00:00Z",
+    "end_time": "2025-10-19T21:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2025 - Sprint Race",
+    "start_time": "2025-10-18T17:00:00Z",
+    "end_time": "2025-10-18T18:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2025 - Sprint Qualification",
+    "start_time": "2025-10-17T21:30:00Z",
+    "end_time": "2025-10-17T22:14:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-11-21T00:30:00Z",
+    "end_time": "2025-11-21T01:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2025 - Practice 2",
+    "start_time": "2025-11-21T04:00:00Z",
+    "end_time": "2025-11-21T05:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2025 - Practice 3",
+    "start_time": "2025-11-22T00:30:00Z",
+    "end_time": "2025-11-22T01:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-11-22T04:00:00Z",
+    "end_time": "2025-11-22T05:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2025 - Race",
+    "start_time": "2025-11-23T04:00:00Z",
+    "end_time": "2025-11-23T06:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-11-28T13:30:00Z",
+    "end_time": "2025-11-28T14:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-11-29T18:00:00Z",
+    "end_time": "2025-11-29T19:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2025 - Practice 1",
+    "start_time": "2025-12-05T09:30:00Z",
+    "end_time": "2025-12-05T10:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2025 - Practice 2",
+    "start_time": "2025-12-05T13:00:00Z",
+    "end_time": "2025-12-05T14:00:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2025 - Practice 3",
+    "start_time": "2025-12-06T10:30:00Z",
+    "end_time": "2025-12-06T11:30:00Z"
+  },
+  {
+    "event_name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2025 - Qualifying",
+    "start_time": "2025-12-06T14:00:00Z",
+    "end_time": "2025-12-06T15:00:00Z"
+  },
+  {
+    "event_name": "Formula 1 in your calendar!",
+    "start_time": "2025-07-01T15:38:00Z",
+    "end_time": "2025-07-01T15:53:00Z"
+  }
+]

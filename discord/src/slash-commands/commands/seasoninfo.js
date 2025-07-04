@@ -6,7 +6,7 @@ const constructor = require('../data/af1db-seasons-constructor-standings')
 const races = require('../data/aracestandings')
 
 const footer = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/carfooter.jpeg')
-const footers = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Landscapetrack.jpeg')
+const footers = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-AssRaests/refs/heads/main/Landscapetrack.jpeg')
 const logo = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/f1-abu-dhabi-gp-2017-f1-logo-6614911-removebg-preview.png')
 
 const liveSeason = require('./liveseason')
@@ -20,7 +20,8 @@ module.exports = {
                 .setName('calendar')
                 .setDescription('View the race calendar for a season')
                 .addStringOption(option =>
-                    option.setName('year')
+                    option
+                        .setName('year')
                         .setDescription('Select a year')
                         .setAutocomplete(true)
                         .setRequired(true)))
@@ -97,9 +98,9 @@ module.exports = {
                     return interaction.reply(`No races for ${year}`);
                 }
 
-                if (year === 2025 ) {
+                if (year === 2025) {
                     return liveSeason.execute(interaction);
-                } 
+                }
 
                 const raceList = races
                     .sort((a, b) => a.round - b.round)
@@ -163,60 +164,60 @@ module.exports = {
                     await interaction.reply({ embeds: [standEmbed] });
 
 
-                if (type === 'const-standing') {
-                    const filteredConst = constructor
-                        .filter(d => d.year === year)
-                        .sort((a, b) => a.positionNumber - b.positionNumber);
+                    if (type === 'const-standing') {
+                        const filteredConst = constructor
+                            .filter(d => d.year === year)
+                            .sort((a, b) => a.positionNumber - b.positionNumber);
 
                         const constEmbed = new EmbedBuilder()
-                    .setThumbnail(logo)
-                    .setTitle(`Season calendar for ${year}`)
-                    .setColor('000435')
-                    .setDescription(raceList)
-                    .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
-                    .setImage(footers)
-                    .setTimestamp();
+                            .setThumbnail(logo)
+                            .setTitle(`Season calendar for ${year}`)
+                            .setColor('000435')
+                            .setDescription(raceList)
+                            .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
+                            .setImage(footers)
+                            .setTimestamp();
 
-                    if (filteredConst.length === 0) {
-                        return await interaction.reply({ content: `No constructor standings found for ${year}.`, ephemeral: true });
+                        if (filteredConst.length === 0) {
+                            return await interaction.reply({ content: `No constructor standings found for ${year}.`, ephemeral: true });
+                        }
+                        const standList = filteredConst
+                            .map(constructors => {
+                                const prettyName = constructors.constructorId
+                                    .split('-')
+                                    .map(part => part[0].toUpperCase() + part.slice(1))
+                                    .join(' ');
+
+                                return `**Position ${constructors.positionNumber}:** ${prettyName} with ${constructors.points} point${(constructors.points !== 1) ? "s" : ""}`;
+                            })
+                            .join('\n\n');
+
+                        constEmbed
+
+                            .setDescription('standList')
+
+                        await interaction.reply({ embeds: [constEmbed] });
                     }
-                    const standList = filteredConst
-                        .map(constructors => {
-                            const prettyName = constructors.constructorId
-                                .split('-')
-                                .map(part => part[0].toUpperCase() + part.slice(1))
-                                .join(' ');
-
-                            return `**Position ${constructors.positionNumber}:** ${prettyName} with ${constructors.points} point${(constructors.points !== 1) ? "s" : ""}`;
-                        })
-                        .join('\n\n');
-
-                    constEmbed
-
-                        .setDescription('standList')
-
-                    await interaction.reply({ embeds: [constEmbed] });
-                }
-            }
-
-            if (type === 'race') {
-                // const sessionId = interaction.options.getString('session');
-                const year = parseInt(interaction.options.getString('year'));
-                const race = info.find(races => races.grandPrixId === sessionId);
-
-                if (!race) {
-                    return interaction.reply({ content: `No race found with session ID "${sessionId}".`, ephemeral: true });
                 }
 
-                const raceEmbed = new EmbedBuilder()
-                    .setTitle(`Season information for ${year}`)
-                    .setColor(0x8b0000)
-                    .setTimestamp()
-                    .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
+                if (type === 'race') {
+                    // const sessionId = interaction.options.getString('session');
+                    const year = parseInt(interaction.options.getString('year'));
+                    const race = info.find(races => races.grandPrixId === sessionId);
 
-                return interaction.reply({ embeds: [raceEmbed] });
+                    if (!race) {
+                        return interaction.reply({ content: `No race found with session ID "${sessionId}".`, ephemeral: true });
+                    }
+
+                    const raceEmbed = new EmbedBuilder()
+                        .setTitle(`Season information for ${year}`)
+                        .setColor(0x8b0000)
+                        .setTimestamp()
+                        .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() });
+
+                    return interaction.reply({ embeds: [raceEmbed] });
+                }
             }
-        }
 
         } catch (err) {
             console.error('Error executing command:', err);
