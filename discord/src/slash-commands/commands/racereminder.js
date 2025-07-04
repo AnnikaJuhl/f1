@@ -1,6 +1,6 @@
-const { SlashCommandBuilder, EmbedBuilder, ReactionCollector, Embed } = require('discord.js')
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
 
-const remind = require('upcoming2025')
+const remind = require('../data/upcoming2025.json')
 
 const footer = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/carfooter.jpeg')
 const footers = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Landscapetrack.jpeg')
@@ -37,62 +37,76 @@ module.exports = {
                 .setDescription('Countdown and reminder for upcoming race')
                 .addChoices(
                     { name: 'countdown', value: 'rcount' },
-                    { name: 'remind', value: 'rremind' }))
-}
+                    { name: 'remind', value: 'rremind' })),
 
-async execute(interaction) {
-    try {
+    async execute(interaction) {
+        try {
+            const options = ['practice', 'qualification', 'sprint', 'race'];
 
-        const options = ['practice', 'qualification', 'sprint', 'race'];
+            let sessionName = null;
+            let selectedValue = null;
 
-        let selectedValue = null;
-        for (const opt of options) {
-            const val = interaction.options.getString(opt);
-            if (val) {
-                selectedValue = val;
-                break;
+            for (const opt of options) {
+                const value = interaction.options.getString(opt);
+                if (value) {
+                    sessionName = opt;
+                    selectedValue = value;
+                    break;
+                }
             }
-        }
 
-        if (!selectedValue) {
-            return interaction.reply('Option not valid')
-        }
+            if (!selectedValue || !sessionName) {
+                return interaction.reply('Option not valid');
+            }
+
+            const iscount = selectedValue.includes('count');
+
+            const fuzzynext = {
+                race: ['race'],
+                sprint: ['sprint'],
+                qualification: ['qualifying', 'sprint shootout', 'shootout', 'sprint qualifying'],
+                practice: ['practice 1', 'practice 2', 'practice 3', 'free practice', 'practice']
+            };
+
+            const keywords = fuzzynext[sessionName];
+            const now = new Date();
+
+            const upcoming = remind
+                .filter(event => {
+                    const name = event.event_name.toLowerCase();
+                    const eventTime = new Date(event.start_time);
+
+                    if (eventTime <= now) return false;
+                    return keywords.some(keyword => name.includes(keyword));
+                })
+                .sort((a, b) => new Date(a.start_time) - new Date(b.start_time));
+
+            const next = upcoming[0];
 
 
-        if (selectedValue.endsWith('count')) {
+            if (!next) {
+                return interaction.reply('No sessions upcoming')
+            }
 
-            const countEmbed = new Embed()
-                .setTitle(`Starting countdown for ${val}`)
-                .setDescription(`**${next.name}** starts <t:${unix}:R> on <t:${unix}:F>`)
+            const unix = Math.floor(new Date(next.start_time).getTime() / 1000);
+
+            const countEmbed = new EmbedBuilder()
+                .setTitle(`Countdown for ${sessionName.toUpperCase()}`)
+                .setDescription(
+                    iscount
+                        ? `**${next.event_name}** ${sessionName} starts <t:${unix}:R> on <t:${unix}:F>`
+                        : `**${next.event_name}** ${sessionName} is scheduled on <t:${unix}:F>`
+                )
                 .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
                 .setTimestamp()
-                .setImage(footer)
+                .setImage(footer);
 
-        } else {
+            return interaction.reply({ embeds: [countEmbed] });
 
+        } catch (err) {
+            console.error(err);
+            return interaction.reply('Flat tire, missing data!');
         }
-        // const option = interaction.options.getString('reminders');
-
-        // const countdown = new EmbedBuilder()
-        //     .setTitle('Session countdown!')
-        //     .setTimeStamp()
-        //     .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
-
-        // if (option === 'practice') {
-        //     const type = interaction.options.getString('countdown')
-        //     const upcomingSessions = remind.filter(d => new Date(d.start_time).getTime() > new Date().getTime());
-
-
-        //     if (upcomingSessions.length === 0) {
-        //         return interaction.reply('No upcoming races');
-        //     }
-        // }
-
-
-        return interaction.reply(`${event_name} takes place on ${start_time}`);
-    } catch (err) {
-        console.error(err);
-        return interaction.reply('Flat tire! Missing data')
     }
 }
 
