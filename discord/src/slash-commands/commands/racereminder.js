@@ -83,20 +83,66 @@ module.exports = {
 
             const next = upcoming[0];
 
+            function toTitleCase(str) {
+                return str
+                    .toLowerCase()
+                    .split(' ')
+                    .map(word => {
+                        if (word.length === 0) return '';
+                        return word[0].toUpperCase() + word.slice(1);
+                    })
+                    .join(' ');
+            }
 
             if (!next) {
                 return interaction.reply('No sessions upcoming')
             }
 
+            if (selectedValue.includes('remind')) {
+                const fullName = next.event_name
+                const [grandPrixPart, sessionPartRaw] = fullName.split(' - ');
+                const sessionPart = sessionPartRaw?.charAt(0).toUpperCase() + sessionPartRaw?.slice(1).toLowerCase();
+
+                const cleanedName = grandPrixPart
+                    .replace(/^FORMULA 1\s+/i, '')
+                    .replace(/\b20\d{2}\b$/, '') 
+                    .trim();
+                const grandPrixName = toTitleCase(cleanedName);
+
+                const startTime = new Date(next.start_time);
+                const nowTime = new Date();
+
+                const reminderDelay = startTime.getTime() - nowTime.getTime() - (10 * 60 * 1000);
+
+                if (reminderDelay <= 0) {
+                    await interaction.reply(`**Hurry**, ${grandPrixName} starts in less than 10 minutes!`);
+                    return;
+                } 
+                await interaction.reply(`I'll remind you 10 minutes before ${grandPrixName} - ${sessionPart} starts`)
+
+                setTimeout(() => {
+                    interaction.user.send(`${interaction.user.username} buckle up, **${grandPrixName}** - **${sessionPart}** starts in 10 minutes!`)
+            }, reminderDelay);
+            return; 
+        }
+
+            const fullName = next.event_name
+            const [grandPrixPart, sessionPartRaw] = fullName.split(' - ');
+
             const unix = Math.floor(new Date(next.start_time).getTime() / 1000);
 
+            const cleanedName = grandPrixPart.replace(/^FORMULA 1\s+/i, '').trim();
+            const grandPrixName = toTitleCase(cleanedName);
+
             const countEmbed = new EmbedBuilder()
-                .setTitle(`Countdown for ${sessionName.toUpperCase()}`)
+                .setTitle(`Countdown to ${grandPrixName}`)
+                .setThumbnail(logo)
                 .setDescription(
                     iscount
-                        ? `**${next.event_name}** ${sessionName} starts <t:${unix}:R> on <t:${unix}:F>`
-                        : `**${next.event_name}** ${sessionName} is scheduled on <t:${unix}:F>`
+                        ? `**${grandPrixName}** starts <t:${unix}:R> on <t:${unix}:F>`
+                        : `**${grandPrixName}**  is scheduled on <t:${unix}:F>`
                 )
+                .setColor(0x8b0000)
                 .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
                 .setTimestamp()
                 .setImage(footer);
