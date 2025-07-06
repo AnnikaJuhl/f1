@@ -1,19 +1,21 @@
 const { Events } = require('discord.js');
+const readctionRoles = require('../slash-commands/commands/reactionroles');
+const reactionRoles = require('../slash-commands/commands/reactionroles');
 
 module.exports = {
   name: Events.InteractionCreate,
   async execute(interaction) {
-    
+
     if (interaction.isAutocomplete()) {
-       console.log(`Received autocomplete for: ${interaction.commandName}`);
+      console.log(`Received autocomplete for: ${interaction.commandName}`);
       const command = interaction.client.commands.get(interaction.commandName);
-        console.log([...interaction.client.commands.values()].map(c => c.data?.name));
+      console.log([...interaction.client.commands.values()].map(c => c.data?.name));
 
-       if (!command || !command.autocomplete) {
+      if (!command || !command.autocomplete) {
         return interaction.respond([]);
-       }
+      }
 
-       try {
+      try {
         await command.autocomplete(interaction);
         console.log('Autocomplete handled successfully.');
       } catch (error) {
@@ -35,7 +37,7 @@ module.exports = {
       await command.execute(interaction);
     } catch (error) {
       console.error(error);
-      const response = { content: 'Loose lug nut, return to garage', ephemeral:true };
+      const response = { content: 'Loose lug nut, return to garage', ephemeral: true };
       if (interaction.replied || interaction.deferred) {
         await interaction.followUp(response);
       } else {

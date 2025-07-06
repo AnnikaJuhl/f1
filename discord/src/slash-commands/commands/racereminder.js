@@ -38,7 +38,6 @@ module.exports = {
                 .addChoices(
                     { name: 'countdown', value: 'rcount' },
                     { name: 'remind', value: 'rremind' })),
-
     async execute(interaction) {
         try {
             const options = ['practice', 'qualification', 'sprint', 'race'];
@@ -98,41 +97,41 @@ module.exports = {
                 return interaction.reply('No sessions upcoming')
             }
 
+            const fullName = next.event_name;
+            const [grandPrixPart, sessionPartRaw] = fullName.split(' - ');
+            const sessionPart = sessionPartRaw
+                ? sessionPartRaw.charAt(0).toUpperCase() + sessionPartRaw?.slice(1).toLowerCase()
+                : 'Session';
+
+            const cleanedName = grandPrixPart
+                .replace(/^FORMULA 1\s+/i, '')
+                .replace(/\b20\d{2}\b/g, '')
+                .trim();
+            const grandPrixName = toTitleCase(cleanedName);
+
+            const startTime = new Date(next.start_time);
+            const nowTime = new Date();
+            const reminderDelay = startTime.getTime() - nowTime.getTime() - (10 * 60 * 1000);
+
             if (selectedValue.includes('remind')) {
-                const fullName = next.event_name
-                const [grandPrixPart, sessionPartRaw] = fullName.split(' - ');
-                const sessionPart = sessionPartRaw?.charAt(0).toUpperCase() + sessionPartRaw?.slice(1).toLowerCase();
-
-                const cleanedName = grandPrixPart
-                    .replace(/^FORMULA 1\s+/i, '')
-                    .replace(/\b20\d{2}\b$/, '') 
-                    .trim();
-                const grandPrixName = toTitleCase(cleanedName);
-
-                const startTime = new Date(next.start_time);
-                const nowTime = new Date();
-
-                const reminderDelay = startTime.getTime() - nowTime.getTime() - (10 * 60 * 1000);
 
                 if (reminderDelay <= 0) {
                     await interaction.reply(`**Hurry**, ${grandPrixName} starts in less than 10 minutes!`);
                     return;
-                } 
+                }
                 await interaction.reply(`I'll remind you 10 minutes before ${grandPrixName} - ${sessionPart} starts`)
 
-                setTimeout(() => {
-                    interaction.user.send(`${interaction.user.username} buckle up, **${grandPrixName}** - **${sessionPart}** starts in 10 minutes!`)
-            }, reminderDelay);
-            return; 
-        }
+                setTimeout(async () => {
+                    try {
+                        await interaction.user.send(`${interaction.user.username} buckle up, **${grandPrixName}** - **${sessionPart}** starts in 10 minutes!`)
+                    } catch (err) {
+                        console.error('Could not send remind')
+                    }
+                }, reminderDelay);
+                return;
+            }
 
-            const fullName = next.event_name
-            const [grandPrixPart, sessionPartRaw] = fullName.split(' - ');
-
-            const unix = Math.floor(new Date(next.start_time).getTime() / 1000);
-
-            const cleanedName = grandPrixPart.replace(/^FORMULA 1\s+/i, '').trim();
-            const grandPrixName = toTitleCase(cleanedName);
+            const unix = Math.floor(startTime.getTime() / 1000);
 
             const countEmbed = new EmbedBuilder()
                 .setTitle(`Countdown to ${grandPrixName}`)
