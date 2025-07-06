@@ -21,17 +21,17 @@ module.exports = {
         interaction.options.getString("Gif")
         axios.get(`https://g.tenor.com/v1/search?q=${interaction.options.getString("driver")}&key=LIVDSRZULELA&limit=25`).then(res => {
             const results = res.data.results
-                const url = results[Math.floor(results.length*Math.random()+1)].url
-                interaction.reply(url??"random", {
-                    ephemeral: false
+            const url = results[Math.floor(results.length * Math.random() + 1)].url
+            interaction.reply(url ?? "random", {
+                ephemeral: false
 
 
-                    //              .catch(error => {
-                    // console.error("Error fetching data:", error);
-                    // interaction.reply("Sorry, something went wrong while fetching the random Formula 1 moment.");
-                    //              })
-                })
+                    .catch(error => {
+                        console.error("Error fetching data:", error);
+                        interaction.reply("Sorry, something went wrong while fetching the random Formula 1 moment.");
+                    })
             })
+        })
 
-        }
     }
+}

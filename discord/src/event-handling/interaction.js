@@ -1,6 +1,4 @@
 const { Events } = require('discord.js');
-const readctionRoles = require('../slash-commands/commands/reactionroles');
-const reactionRoles = require('../slash-commands/commands/reactionroles');
 
 module.exports = {
   name: Events.InteractionCreate,

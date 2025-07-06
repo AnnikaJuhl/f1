@@ -1,11 +1,14 @@
 require('dotenv').config();
-const { Client, Collection, GatewayIntentBits } = require('discord.js');
+const { Client, Collection, GatewayIntentBits, Partials } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
 
 const fetchRaces = require('./utils/racefetch');
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ 
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessageReactions, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMessages],
+  partials: [Partials.Message, Partials.Channel, Partials.Reaction]
+ });
 client.commands = new Collection();
 
 const eventsPath = path.join(__dirname, 'event-handling');

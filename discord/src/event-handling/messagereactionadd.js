@@ -1,14 +1,27 @@
-const reactionRoles = require('../slash-commands/commands/reactionroles');
+const { Events } = require('discord.js');
+const { messageID, roles } = require('../slash-commands/commands/reactionroles/reactionroles');
 
 module.exports = {
-  name: 'messageReactionAdd',
+  name: Events.MessageReactionAdd,
 
   async execute(reaction, user) {
     if (user.bot) return;
 
-    if (reaction.message.id !== reactionRoles.messageId) return;
+    if (reaction.partial) {
+      try {
+        await reaction.fetch();
+      } catch (error) {
+        console.error('Issue fetching reaction', error);
+        return;
+      }
+    }
+    if (reaction.message.id !== messageID) 
+      return;
 
-    const roleId = reactionRoles.roles[reaction.emoji.name];
+    const emoji = reaction.emoji.id
+      ? `${reaction.emoji.id}:${reaction.emoji.id}`
+      : reaction.emoji.name;
+    const roleId = roles[emoji];
     if (!roleId) return;
 
     const guild = reaction.message.guild;
@@ -19,5 +32,5 @@ module.exports = {
     if (!member.roles.cache.has(roleId)) {
       await member.roles.add(roleId).catch(console.error);
     }
-  }
+  },
 };
