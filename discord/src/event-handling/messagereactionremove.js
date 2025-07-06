@@ -1,23 +1,26 @@
 const reactionRoles = require('../slash-commands/commands/reactionroles');
 
-if (user.bot)
-        return;
+module.exports = {
+    name: 'messageReactionRemove',
 
-      if (reaction.message.id !== reactionRoles.messageID)
-        return;
+    async execute(reaction, user) {
+        if (user.bot)
+            return;
 
-      const roleId = reactionRoles.roles[reaction.emoji.name];
-      if (!roleId)
-        return;
+        if (reaction.message.id !== reactionRoles.messageID)
+            return;
 
-      const guild = reaction.message.guild;
-      const member = await guild.members.fetch(user.id).catch(() => null);
-      if (!member)
-        return;
+        const roleId = reactionRoles.roles[reaction.emoji.name];
+        if (!roleId)
+            return;
 
-      if (member.roles.cache.has(roleId)) {
-        await member.roles.remove(roleId).catch(console.error);
-      }
-    })
+        const guild = reaction.message.guild;
+        const member = await guild.members.fetch(user.id).catch(() => null);
+        if (!member)
+            return;
 
-}
+        if (member.roles.cache.has(roleId)) {
+            await member.roles.remove(roleId).catch(console.error);
+        }
+    }
+};
