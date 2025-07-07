@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
 
-const remind = require('../data/upcoming2025.json')
+const remind = require('../../data/upcoming2025.json')
+const sessionRoles = require('../reactionroles/reactionroles')
 
 const footer = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/carfooter.jpeg')
 const footers = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Landscapetrack.jpeg')
@@ -116,14 +117,29 @@ module.exports = {
             if (selectedValue.includes('remind')) {
 
                 if (reminderDelay <= 0) {
-                    await interaction.reply(`**Hurry**, ${grandPrixName} starts in less than 10 minutes!`);
-                    return;
+
+                    const remindEmbed = new EmbedBuilder()
+                        .setTitle('Reminder for upcoming session')
+                        .setThumbnail(logo)
+                        .setDescription(`**Hurry**, ${grandPrixName} starts in less than 10 minutes!`)
+                        .setColor(0x8b0000)
+                        .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
+                        .setTimestamp()
+                        .setImage(footers);
+                    return interaction.reply({ embeds: [remindEmbed] });
+
                 }
-                await interaction.reply(`I'll remind you 10 minutes before ${grandPrixName} - ${sessionPart} starts`)
 
                 setTimeout(async () => {
                     try {
-                        await interaction.user.send(`${interaction.user.username} buckle up, **${grandPrixName}** - **${sessionPart}** starts in 10 minutes!`)
+                        const roleId = sessionRoles[sessionName];
+                        const channelId = '1391556374160478298'
+                        const channel = interaction.client.channels.cache.get(channelId);
+
+                        if (!channel || !roleId)
+                            return;
+
+                        await channel.send(`$<@&${roleId}> buckle up, **${grandPrixName}** - **${sessionPart}** starts in 10 minutes!`)
                     } catch (err) {
                         console.error('Could not send remind')
                     }

@@ -21,7 +21,8 @@ module.exports = {
     const emoji = reaction.emoji.id
       ? `${reaction.emoji.id}:${reaction.emoji.id}`
       : reaction.emoji.name;
-    const roleId = roles[emoji];
+      
+    const roleId = roles[reaction.emoji.name];
     if (!roleId) return;
 
     const guild = reaction.message.guild;
