@@ -8,37 +8,37 @@ const footers = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/r
 const logo = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/f1-abu-dhabi-gp-2017-f1-logo-6614911-removebg-preview.png')
 
 module.exports = {
-    data: new SlashCommandBuilder()
-        .setName('reminders')
-        .setDescription('Provides reminders and countdowns for free practices, quali, sprints, and races')
-        .addStringOption(option =>
-            option
-                .setName('practice')
-                .setDescription('Countdown and reminder for upcoming free practices')
-                .addChoices(
-                    { name: 'countdown', value: 'pcount' },
-                    { name: 'remind', value: 'premind' }))
-        .addStringOption(option =>
-            option
-                .setName('qualification')
-                .setDescription('Countdown and reminder for upcoming quali')
-                .addChoices(
-                    { name: 'countdown', value: 'qcount' },
-                    { name: 'remind', value: 'qremind' }))
-        .addStringOption(option =>
-            option
-                .setName('sprint')
-                .setDescription('Countdown and reminder for upcoming sprint')
-                .addChoices(
-                    { name: 'countdown', value: 'scount' },
-                    { name: 'remind', value: 'sremind' }))
-        .addStringOption(option =>
-            option
-                .setName('race')
-                .setDescription('Countdown and reminder for upcoming race')
-                .addChoices(
-                    { name: 'countdown', value: 'rcount' },
-                    { name: 'remind', value: 'rremind' })),
+    // data: new SlashCommandBuilder()
+    //     .setName('reminders')
+    //     .setDescription('Provides reminders and countdowns for free practices, quali, sprints, and races')
+    //     .addStringOption(option =>
+    //         option
+    //             .setName('practice')
+    //             .setDescription('Countdown and reminder for upcoming free practices')
+    //             .addChoices(
+    //                 { name: 'countdown', value: 'pcount' },
+    //                 { name: 'remind', value: 'premind' }))
+    //     .addStringOption(option =>
+    //         option
+    //             .setName('qualification')
+    //             .setDescription('Countdown and reminder for upcoming quali')
+    //             .addChoices(
+    //                 { name: 'countdown', value: 'qcount' },
+    //                 { name: 'remind', value: 'qremind' }))
+    //     .addStringOption(option =>
+    //         option
+    //             .setName('sprint')
+    //             .setDescription('Countdown and reminder for upcoming sprint')
+    //             .addChoices(
+    //                 { name: 'countdown', value: 'scount' },
+    //                 { name: 'remind', value: 'sremind' }))
+    //     .addStringOption(option =>
+    //         option
+    //             .setName('race')
+    //             .setDescription('Countdown and reminder for upcoming race')
+    //             .addChoices(
+    //                 { name: 'countdown', value: 'rcount' },
+    //                 { name: 'remind', value: 'rremind' })),
     async execute(interaction) {
         try {
             const options = ['practice', 'qualification', 'sprint', 'race'];
