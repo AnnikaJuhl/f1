@@ -15,13 +15,10 @@ module.exports = {
         return;
       }
     }
-    if (reaction.message.id !== messageID) 
+    if (reaction.message.id !== messageID)
       return;
 
-    const emojiKey = reaction.emoji.id
-      ? reaction.emoji.id 
-      : reaction.emoji.name;
-
+    const emojiKey = reaction.emoji.id || reaction.emoji.name;
     const roleId = roles[emojiKey];
     if (!roleId) return;
 

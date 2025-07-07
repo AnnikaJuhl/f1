@@ -17,17 +17,14 @@ module.exports = {
             }
         }
 
-        if (reaction.message.id !== messageID) 
+        if (reaction.message.id !== messageID)
             return;
-        
-        const emoji = reaction.emoji.id
-            ? `${reaction.emoji.id}:${reaction.emoji.id}`
-            : reaction.emoji.name;
-        console.log(emoji, messageID, reaction.message.id)
 
-        const roleId = roles[reaction.emoji.name];
-        if (!roleId)
-            return;
+        const emojiKey = reaction.emoji.id || reaction.emoji.name;
+        const roleId = roles[emojiKey];
+        if (!roleId) return;
+        console.log(emojiKey, messageID, reaction.message.id)
+
         const guild = reaction.message.guild;
         const member = await guild.members.fetch(user.id).catch(() => null);
         if (!member)

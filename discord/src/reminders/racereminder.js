@@ -1,7 +1,7 @@
 const { EmbedBuilder } = require('discord.js')
 
 const remind = require('../slash-commands/data/upcoming2025.json')
-const sessionRoles = require('./reactionroles')
+const { sessionRoles } = require('./reactionroles')
 
 const channelId = '1391556374160478298'
 
