@@ -1,5 +1,5 @@
 const { Events } = require('discord.js');
-const { messageID, roles } = require('../slash-commands/commands/reactionroles/reactionroles');
+const { messageID, roles } = require('../reminders/reactionroles');
 
 module.exports = {
   name: Events.MessageReactionAdd,
@@ -18,11 +18,11 @@ module.exports = {
     if (reaction.message.id !== messageID) 
       return;
 
-    const emoji = reaction.emoji.id
-      ? `${reaction.emoji.id}:${reaction.emoji.id}`
+    const emojiKey = reaction.emoji.id
+      ? reaction.emoji.id 
       : reaction.emoji.name;
-      
-    const roleId = roles[reaction.emoji.name];
+
+    const roleId = roles[emojiKey];
     if (!roleId) return;
 
     const guild = reaction.message.guild;

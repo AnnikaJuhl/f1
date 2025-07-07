@@ -1,5 +1,5 @@
 const { Events } = require('discord.js');
-const { messageID, roles } = require('../slash-commands/commands/reactionroles/reactionroles');
+const { messageID, roles } = require('../reminders/reactionroles');
 
 module.exports = {
     name: Events.MessageReactionRemove,

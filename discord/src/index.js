@@ -4,9 +4,10 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const fetchRaces = require('./utils/racefetch');
+const sendReminders = require('./reminders/racereminder.js');
 
 const client = new Client({ 
-  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessageReactions, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMessages],
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessageReactions, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMessages],
   partials: [Partials.Message, Partials.Channel, Partials.Reaction]
  });
 client.commands = new Collection();
@@ -18,7 +19,15 @@ client.on('ready', () => {
   console.log('Going for the gap!');
 });
 
+sendReminders(client);
+
+setInterval(() => {
+  console.log('Rechecking for updates');
+  sendReminders(client);
+}, 10 * 60 * 1000);
+
 const { loadFiles } = require('./utils/fileloader');
+const { log } = require('node:console');
 
 const commandFiles = loadFiles(commandsPath);
 for (const file of commandFiles) {
