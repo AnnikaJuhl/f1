@@ -1,0 +1,1235 @@
+{
+  "description": "A comprehensive list of Formula 1 team principals by year and team, compiled from various public sources. While efforts have been made to ensure accuracy, historical data can be complex due to varying roles and team structures over time. This list aims to be as complete as possible, but some gaps or approximations may exist for earlier periods.",
+  "data": [
+    {
+      "year": 2025,
+      "teams": [
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Mercedes-AMG Petronas F1 Team", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Frédéric Vasseur" },
+        { "team": "McLaren F1 Team", "principal": "Andrea Stella" },
+        { "team": "Aston Martin Aramco F1 Team", "principal": "Andy Cowell" },
+        { "team": "Visa Cash App RB F1 Team", "principal": "Laurent Mekies" },
+        { "team": "Williams Racing", "principal": "James Vowles" },
+        { "team": "Stake F1 Team Kick Sauber", "principal": "Jonathan Wheatley" },
+        { "team": "Haas F1 Team", "principal": "Ayao Komatsu" },
+        { "team": "BWT Alpine F1 Team", "principal": "Oliver Oakes" }
+      ]
+    },
+    {
+      "year": 2024,
+      "teams": [
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Mercedes-AMG Petronas F1 Team", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Frédéric Vasseur" },
+        { "team": "McLaren F1 Team", "principal": "Andrea Stella" },
+        { "team": "Aston Martin Aramco F1 Team", "principal": "Mike Krack" },
+        { "team": "Visa Cash App RB F1 Team", "principal": "Laurent Mekies" },
+        { "team": "Williams Racing", "principal": "James Vowles" },
+        { "team": "Stake F1 Team Kick Sauber", "principal": "Alessandro Alunni Bravi (Team Representative)" },
+        { "team": "Haas F1 Team", "principal": "Ayao Komatsu" },
+        { "team": "BWT Alpine F1 Team", "principal": "Bruno Famin (interim), Otmar Szafnauer (early 2024)" }
+      ]
+    },
+    {
+      "year": 2023,
+      "teams": [
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Mercedes-AMG Petronas F1 Team", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Frédéric Vasseur" },
+        { "team": "McLaren F1 Team", "principal": "Andrea Stella" },
+        { "team": "Aston Martin Aramco F1 Team", "principal": "Mike Krack" },
+        { "team": "Scuderia AlphaTauri", "principal": "Franz Tost" },
+        { "team": "Williams Racing", "principal": "James Vowles" },
+        { "team": "Alfa Romeo F1 Team Stake", "principal": "Alessandro Alunni Bravi (Team Representative)" },
+        { "team": "Haas F1 Team", "principal": "Guenther Steiner" },
+        { "team": "BWT Alpine F1 Team", "principal": "Otmar Szafnauer" }
+      ]
+    },
+    {
+      "year": 2022,
+      "teams": [
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Mercedes-AMG Petronas F1 Team", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Mattia Binotto" },
+        { "team": "McLaren F1 Team", "principal": "Andreas Seidl" },
+        { "team": "Alpine F1 Team", "principal": "Otmar Szafnauer" },
+        { "team": "Aston Martin Aramco F1 Team", "principal": "Mike Krack" },
+        { "team": "AlphaTauri", "principal": "Franz Tost" },
+        { "team": "Williams Racing", "principal": "Jost Capito" },
+        { "team": "Alfa Romeo F1 Team Orlen", "principal": "Frédéric Vasseur" },
+        { "team": "Haas F1 Team", "principal": "Guenther Steiner" }
+      ]
+    },
+    {
+      "year": 2021,
+      "teams": [
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Mercedes-AMG Petronas F1 Team", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Mattia Binotto" },
+        { "team": "McLaren F1 Team", "principal": "Andreas Seidl" },
+        { "team": "Alpine F1 Team", "principal": "Marcin Budkowski & Davide Brivio (Executive Director)" },
+        { "team": "Aston Martin Cognizant F1 Team", "principal": "Otmar Szafnauer" },
+        { "team": "AlphaTauri", "principal": "Franz Tost" },
+        { "team": "Williams Racing", "principal": "Jost Capito" },
+        { "team": "Alfa Romeo Racing Orlen", "principal": "Frédéric Vasseur" },
+        { "team": "Haas F1 Team", "principal": "Guenther Steiner" }
+      ]
+    },
+    {
+      "year": 2020,
+      "teams": [
+        { "team": "Mercedes-AMG Petronas F1 Team", "principal": "Toto Wolff" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Scuderia Ferrari", "principal": "Mattia Binotto" },
+        { "team": "McLaren F1 Team", "principal": "Andreas Seidl" },
+        { "team": "Renault DP World F1 Team", "principal": "Cyril Abiteboul" },
+        { "team": "Racing Point F1 Team", "principal": "Otmar Szafnauer" },
+        { "team": "AlphaTauri", "principal": "Franz Tost" },
+        { "team": "Alfa Romeo Racing Orlen", "principal": "Frédéric Vasseur" },
+        { "team": "Haas F1 Team", "principal": "Guenther Steiner" },
+        { "team": "Williams Racing", "principal": "Simon Roberts (Acting), Claire Williams (Deputy)" }
+      ]
+    },
+    {
+      "year": 2019,
+      "teams": [
+        { "team": "Mercedes-AMG Petronas Motorsport", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Mattia Binotto" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Renault F1 Team", "principal": "Cyril Abiteboul" },
+        { "team": "Haas F1 Team", "principal": "Guenther Steiner" },
+        { "team": "McLaren F1 Team", "principal": "Andreas Seidl" },
+        { "team": "Racing Point F1 Team", "principal": "Otmar Szafnauer" },
+        { "team": "Alfa Romeo Racing", "principal": "Frédéric Vasseur" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Williams Racing", "principal": "Claire Williams (Deputy)" }
+      ]
+    },
+    {
+      "year": 2018,
+      "teams": [
+        { "team": "Mercedes-AMG Petronas Motorsport", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Maurizio Arrivabene" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Force India F1 Team", "principal": "Otmar Szafnauer" },
+        { "team": "Williams Martini Racing", "principal": "Claire Williams (Deputy)" },
+        { "team": "Renault Sport F1 Team", "principal": "Cyril Abiteboul" },
+        { "team": "Haas F1 Team", "principal": "Guenther Steiner" },
+        { "team": "McLaren F1 Team", "principal": "Éric Boullier" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Sauber F1 Team", "principal": "Frédéric Vasseur" }
+      ]
+    },
+    {
+      "year": 2017,
+      "teams": [
+        { "team": "Mercedes-AMG Petronas Motorsport", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Maurizio Arrivabene" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Force India F1 Team", "principal": "Otmar Szafnauer" },
+        { "team": "Williams Martini Racing", "principal": "Claire Williams (Deputy)" },
+        { "team": "Renault Sport F1 Team", "principal": "Cyril Abiteboul" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Haas F1 Team", "principal": "Guenther Steiner" },
+        { "team": "McLaren Honda", "principal": "Éric Boullier" },
+        { "team": "Sauber F1 Team", "principal": "Frédéric Vasseur" }
+      ]
+    },
+    {
+      "year": 2016,
+      "teams": [
+        { "team": "Mercedes-AMG Petronas Motorsport", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Maurizio Arrivabene" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Force India F1 Team", "principal": "Otmar Szafnauer" },
+        { "team": "Williams Martini Racing", "principal": "Claire Williams (Deputy)" },
+        { "team": "Renault Sport F1 Team", "principal": "Frédéric Vasseur" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Sauber F1 Team", "principal": "Monisha Kaltenborn" },
+        { "team": "McLaren Honda", "principal": "Éric Boullier" },
+        { "team": "Haas F1 Team", "principal": "Guenther Steiner" }
+      ]
+    },
+    {
+      "year": 2015,
+      "teams": [
+        { "team": "Mercedes-AMG Petronas Motorsport", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Maurizio Arrivabene" },
+        { "team": "Williams Martini Racing", "principal": "Claire Williams (Deputy)" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Force India F1 Team", "principal": "Vijay Mallya" },
+        { "team": "Lotus F1 Team", "principal": "Matthew Carter" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Sauber F1 Team", "principal": "Monisha Kaltenborn" },
+        { "team": "McLaren Honda", "principal": "Ron Dennis (CEO), Éric Boullier (Racing Director)" },
+        { "team": "Manor Marussia F1 Team", "principal": "John Booth" }
+      ]
+    },
+    {
+      "year": 2014,
+      "teams": [
+        { "team": "Mercedes AMG Petronas F1 Team", "principal": "Toto Wolff" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Williams Martini Racing", "principal": "Claire Williams (Deputy)" },
+        { "team": "Scuderia Ferrari", "principal": "Marco Mattiacci (from April), Stefano Domenicali (until April)" },
+        { "team": "McLaren Mercedes", "principal": "Martin Whitmarsh (until Jan), Éric Boullier (from Jan)" },
+        { "team": "Force India F1 Team", "principal": "Vijay Mallya" },
+        { "team": "Sahara Force India F1 Team", "principal": "Vijay Mallya" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Lotus F1 Team", "principal": "Éric Boullier (until Jan), Federico Gastaldi (from Jan)" },
+        { "team": "Sauber F1 Team", "principal": "Monisha Kaltenborn" },
+        { "team": "Marussia F1 Team", "principal": "John Booth" },
+        { "team": "Caterham F1 Team", "principal": "Cyril Abiteboul (until July), Christijan Albers (from July)" }
+      ]
+    },
+    {
+      "year": 2013,
+      "teams": [
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Mercedes AMG Petronas F1 Team", "principal": "Toto Wolff" },
+        { "team": "Scuderia Ferrari", "principal": "Stefano Domenicali" },
+        { "team": "Lotus F1 Team", "principal": "Éric Boullier" },
+        { "team": "McLaren Mercedes", "principal": "Martin Whitmarsh" },
+        { "team": "Force India F1 Team", "principal": "Vijay Mallya" },
+        { "team": "Sauber F1 Team", "principal": "Monisha Kaltenborn" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "Marussia F1 Team", "principal": "John Booth" },
+        { "team": "Caterham F1 Team", "principal": "Cyril Abiteboul" }
+      ]
+    },
+    {
+      "year": 2012,
+      "teams": [
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "McLaren Mercedes", "principal": "Martin Whitmarsh" },
+        { "team": "Scuderia Ferrari", "principal": "Stefano Domenicali" },
+        { "team": "Mercedes AMG Petronas F1 Team", "principal": "Ross Brawn" },
+        { "team": "Lotus F1 Team", "principal": "Éric Boullier" },
+        { "team": "Sahara Force India F1 Team", "principal": "Vijay Mallya" },
+        { "team": "Sauber F1 Team", "principal": "Monisha Kaltenborn" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "Caterham F1 Team", "principal": "Tony Fernandes" },
+        { "team": "Marussia F1 Team", "principal": "John Booth" },
+        { "team": "HRT F1 Team", "principal": "Luis Pérez-Sala" }
+      ]
+    },
+    {
+      "year": 2011,
+      "teams": [
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "McLaren Mercedes", "principal": "Martin Whitmarsh" },
+        { "team": "Scuderia Ferrari", "principal": "Stefano Domenicali" },
+        { "team": "Mercedes GP Petronas F1 Team", "principal": "Ross Brawn" },
+        { "team": "Lotus Renault GP", "principal": "Éric Boullier" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "Force India F1 Team", "principal": "Vijay Mallya" },
+        { "team": "Sauber F1 Team", "principal": "Monisha Kaltenborn" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Team Lotus", "principal": "Tony Fernandes" },
+        { "team": "HRT F1 Team", "principal": "Colin Kolles" },
+        { "team": "Virgin Racing", "principal": "John Booth" }
+      ]
+    },
+    {
+      "year": 2010,
+      "teams": [
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "McLaren Mercedes", "principal": "Martin Whitmarsh" },
+        { "team": "Scuderia Ferrari", "principal": "Stefano Domenicali" },
+        { "team": "Mercedes GP Petronas F1 Team", "principal": "Ross Brawn" },
+        { "team": "Renault F1 Team", "principal": "Éric Boullier" },
+        { "team": "Force India F1 Team", "principal": "Vijay Mallya" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "Sauber F1 Team", "principal": "Peter Sauber" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Lotus Racing", "principal": "Tony Fernandes" },
+        { "team": "HRT F1 Team", "principal": "Colin Kolles" },
+        { "team": "Virgin Racing", "principal": "John Booth" }
+      ]
+    },
+    {
+      "year": 2009,
+      "teams": [
+        { "team": "Brawn GP Formula One Team", "principal": "Ross Brawn" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "McLaren Mercedes", "principal": "Martin Whitmarsh" },
+        { "team": "Scuderia Ferrari", "principal": "Stefano Domenicali" },
+        { "team": "Toyota Racing", "principal": "John Howett" },
+        { "team": "BMW Sauber F1 Team", "principal": "Mario Theissen" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "Renault F1 Team", "principal": "Flavio Briatore" },
+        { "team": "Force India F1 Team", "principal": "Vijay Mallya" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" }
+      ]
+    },
+    {
+      "year": 2008,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Stefano Domenicali" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "BMW Sauber F1 Team", "principal": "Mario Theissen" },
+        { "team": "Renault F1 Team", "principal": "Flavio Briatore" },
+        { "team": "Toyota Racing", "principal": "John Howett" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "Honda Racing F1 Team", "principal": "Ross Brawn" },
+        { "team": "Force India F1 Team", "principal": "Vijay Mallya" },
+        { "team": "Super Aguri F1", "principal": "Aguri Suzuki" }
+      ]
+    },
+    {
+      "year": 2007,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "BMW Sauber F1 Team", "principal": "Mario Theissen" },
+        { "team": "Renault F1 Team", "principal": "Flavio Briatore" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Toyota Racing", "principal": "Tsutomu Tomita" },
+        { "team": "Super Aguri F1", "principal": "Aguri Suzuki" },
+        { "team": "Honda Racing F1 Team", "principal": "Nick Fry" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Spyker F1 Team", "principal": "Colin Kolles" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" }
+      ]
+    },
+    {
+      "year": 2006,
+      "teams": [
+        { "team": "Renault F1 Team", "principal": "Flavio Briatore" },
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Honda Racing F1 Team", "principal": "Nick Fry" },
+        { "team": "BMW Sauber F1 Team", "principal": "Mario Theissen" },
+        { "team": "Toyota Racing", "principal": "Tsutomu Tomita" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "Scuderia Toro Rosso", "principal": "Franz Tost" },
+        { "team": "Midland F1 Racing", "principal": "Colin Kolles" },
+        { "team": "Super Aguri F1", "principal": "Aguri Suzuki" }
+      ]
+    },
+    {
+      "year": 2005,
+      "teams": [
+        { "team": "Renault F1 Team", "principal": "Flavio Briatore" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "Toyota Racing", "principal": "Tsutomu Tomita" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "BAR Honda", "principal": "Nick Fry" },
+        { "team": "Red Bull Racing", "principal": "Christian Horner" },
+        { "team": "Sauber Petronas", "principal": "Peter Sauber" },
+        { "team": "Jordan Grand Prix", "principal": "Colin Kolles" },
+        { "team": "Minardi F1 Team", "principal": "Paul Stoddart" }
+      ]
+    },
+    {
+      "year": 2004,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "BAR Honda", "principal": "David Richards" },
+        { "team": "Renault F1 Team", "principal": "Flavio Briatore" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Sauber Petronas", "principal": "Peter Sauber" },
+        { "team": "Jaguar Racing", "principal": "Tony Purnell" },
+        { "team": "Toyota Racing", "principal": "Tsutomu Tomita" },
+        { "team": "Jordan Grand Prix", "principal": "Eddie Jordan" },
+        { "team": "Minardi Cosworth", "principal": "Paul Stoddart" }
+      ]
+    },
+    {
+      "year": 2003,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Renault F1 Team", "principal": "Flavio Briatore" },
+        { "team": "BAR Honda", "principal": "David Richards" },
+        { "team": "Sauber Petronas", "principal": "Peter Sauber" },
+        { "team": "Jordan Grand Prix", "principal": "Eddie Jordan" },
+        { "team": "Jaguar Racing", "principal": "Richard Parry-Jones" },
+        { "team": "Toyota Racing", "principal": "Ove Andersson" },
+        { "team": "Minardi Cosworth", "principal": "Paul Stoddart" }
+      ]
+    },
+    {
+      "year": 2002,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Renault F1 Team", "principal": "Flavio Briatore" },
+        { "team": "Sauber Petronas", "principal": "Peter Sauber" },
+        { "team": "Jordan Honda", "principal": "Eddie Jordan" },
+        { "team": "BAR Honda", "principal": "David Richards" },
+        { "team": "Jaguar Racing", "principal": "Niki Lauda" },
+        { "team": "Arrows Cosworth", "principal": "Tom Walkinshaw" },
+        { "team": "Toyota Racing", "principal": "Ove Andersson" },
+        { "team": "Minardi Asiatech", "principal": "Paul Stoddart" }
+      ]
+    },
+    {
+      "year": 2001,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Williams F1 Team", "principal": "Frank Williams" },
+        { "team": "Sauber Petronas", "principal": "Peter Sauber" },
+        { "team": "BAR Honda", "principal": "Craig Pollock" },
+        { "team": "Jordan Honda", "principal": "Eddie Jordan" },
+        { "team": "Benetton Renault", "principal": "Flavio Briatore" },
+        { "team": "Jaguar Racing", "principal": "Bobby Rahal" },
+        { "team": "Prost Acer", "principal": "Alain Prost" },
+        { "team": "Arrows Asiatech", "principal": "Tom Walkinshaw" },
+        { "team": "Minardi European", "principal": "Paul Stoddart" }
+      ]
+    },
+    {
+      "year": 2000,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Jordan Mugen-Honda", "principal": "Eddie Jordan" },
+        { "team": "Jaguar Racing", "principal": "Jackie Stewart" },
+        { "team": "BMW WilliamsF1 Team", "principal": "Frank Williams" },
+        { "team": "Benetton Playlife", "principal": "Rocco Benetton" },
+        { "team": "Prost Peugeot", "principal": "Alain Prost" },
+        { "team": "Sauber Petronas", "principal": "Peter Sauber" },
+        { "team": "Arrows Supertec", "principal": "Tom Walkinshaw" },
+        { "team": "Minardi Fondmetal", "principal": "Giancarlo Minardi" },
+        { "team": "BAR Honda", "principal": "Craig Pollock" }
+      ]
+    },
+    {
+      "year": 1999,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Jordan Mugen-Honda", "principal": "Eddie Jordan" },
+        { "team": "Stewart Ford", "principal": "Jackie Stewart" },
+        { "team": "Williams Supertec", "principal": "Frank Williams" },
+        { "team": "Benetton Playlife", "principal": "Rocco Benetton" },
+        { "team": "Prost Peugeot", "principal": "Alain Prost" },
+        { "team": "Sauber Petronas", "principal": "Peter Sauber" },
+        { "team": "Arrows", "principal": "Tom Walkinshaw" },
+        { "team": "Minardi Ford", "principal": "Giancarlo Minardi" },
+        { "team": "BAR Supertec", "principal": "Craig Pollock" }
+      ]
+    },
+    {
+      "year": 1998,
+      "teams": [
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "Williams Mecachrome", "principal": "Frank Williams" },
+        { "team": "Benetton Playlife", "principal": "David Richards" },
+        { "team": "Jordan Mugen-Honda", "principal": "Eddie Jordan" },
+        { "team": "Prost Peugeot", "principal": "Alain Prost" },
+        { "team": "Sauber Petronas", "principal": "Peter Sauber" },
+        { "team": "Arrows", "principal": "Tom Walkinshaw" },
+        { "team": "Stewart Ford", "principal": "Jackie Stewart" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Minardi Ford", "principal": "Giancarlo Minardi" }
+      ]
+    },
+    {
+      "year": 1997,
+      "teams": [
+        { "team": "Williams Renault", "principal": "Frank Williams" },
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "Benetton Renault", "principal": "Flavio Briatore" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Jordan Peugeot", "principal": "Eddie Jordan" },
+        { "team": "Prost Mugen-Honda", "principal": "Alain Prost" },
+        { "team": "Sauber Petronas", "principal": "Peter Sauber" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Arrows Yamaha", "principal": "Tom Walkinshaw" },
+        { "team": "Stewart Ford", "principal": "Jackie Stewart" },
+        { "team": "Minardi Hart", "principal": "Giancarlo Minardi" },
+        { "team": "Lola Ford", "principal": "Eric Broadley" }
+      ]
+    },
+    {
+      "year": 1996,
+      "teams": [
+        { "team": "Williams Renault", "principal": "Frank Williams" },
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "Benetton Renault", "principal": "Flavio Briatore" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Jordan Peugeot", "principal": "Eddie Jordan" },
+        { "team": "Ligier Mugen-Honda", "principal": "Tom Walkinshaw" },
+        { "team": "Sauber Ford", "principal": "Peter Sauber" },
+        { "team": "Tyrrell Yamaha", "principal": "Ken Tyrrell" },
+        { "team": "Arrows Hart", "principal": "Tom Walkinshaw" },
+        { "team": "Minardi Ford", "principal": "Giancarlo Minardi" },
+        { "team": "Forti Ford", "principal": "Guido Forti" }
+      ]
+    },
+    {
+      "year": 1995,
+      "teams": [
+        { "team": "Benetton Renault", "principal": "Flavio Briatore" },
+        { "team": "Williams Renault", "principal": "Frank Williams" },
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "McLaren Mercedes", "principal": "Ron Dennis" },
+        { "team": "Ligier Mugen-Honda", "principal": "Flavio Briatore" },
+        { "team": "Jordan Peugeot", "principal": "Eddie Jordan" },
+        { "team": "Sauber Ford", "principal": "Peter Sauber" },
+        { "team": "Tyrrell Yamaha", "principal": "Ken Tyrrell" },
+        { "team": "Footwork Hart", "principal": "Alan Jenkins" },
+        { "team": "Minardi Ford", "principal": "Giancarlo Minardi" },
+        { "team": "Pacific Ford", "principal": "Keith Wiggins" },
+        { "team": "Forti Ford", "principal": "Guido Forti" }
+      ]
+    },
+    {
+      "year": 1994,
+      "teams": [
+        { "team": "Benetton Ford", "principal": "Flavio Briatore" },
+        { "team": "Williams Renault", "principal": "Frank Williams" },
+        { "team": "Scuderia Ferrari", "principal": "Jean Todt" },
+        { "team": "McLaren Peugeot", "principal": "Ron Dennis" },
+        { "team": "Jordan Hart", "principal": "Eddie Jordan" },
+        { "team": "Tyrrell Yamaha", "principal": "Ken Tyrrell" },
+        { "team": "Ligier Renault", "principal": "Flavio Briatore" },
+        { "team": "Sauber Mercedes", "principal": "Peter Sauber" },
+        { "team": "Footwork Ford", "principal": "Alan Jenkins" },
+        { "team": "Minardi Ford", "principal": "Giancarlo Minardi" },
+        { "team": "Larrousse Ford", "principal": "Gérard Larrousse" },
+        { "team": "Pacific Ilmor", "principal": "Keith Wiggins" }
+      ]
+    },
+    {
+      "year": 1993,
+      "teams": [
+        { "team": "Williams Renault", "principal": "Frank Williams" },
+        { "team": "McLaren Ford", "principal": "Ron Dennis" },
+        { "team": "Benetton Ford", "principal": "Flavio Briatore" },
+        { "team": "Ligier Renault", "principal": "Guy Ligier" },
+        { "team": "Ferrari", "principal": "Jean Todt" },
+        { "team": "Footwork Mugen-Honda", "principal": "Jackie Oliver" },
+        { "team": "Sauber", "principal": "Peter Sauber" },
+        { "team": "Tyrrell Yamaha", "principal": "Ken Tyrrell" },
+        { "team": "Minardi Ford", "principal": "Giancarlo Minardi" },
+        { "team": "Larrousse Lamborghini", "principal": "Gérard Larrousse" },
+        { "team": "Jordan Hart", "principal": "Eddie Jordan" },
+        { "team": "Lola Ferrari", "principal": "Giancarlo Minardi" }
+      ]
+    },
+    {
+      "year": 1992,
+      "teams": [
+        { "team": "Williams Renault", "principal": "Frank Williams" },
+        { "team": "McLaren Honda", "principal": "Ron Dennis" },
+        { "team": "Benetton Ford", "principal": "Flavio Briatore" },
+        { "team": "Scuderia Ferrari", "principal": "Piero Lardi Ferrari (President), Claudio Lombardi (Sporting Director)" },
+        { "team": "Lotus Ford", "principal": "Peter Collins" },
+        { "team": "Tyrrell Ilmor", "principal": "Ken Tyrrell" },
+        { "team": "Footwork Mugen-Honda", "principal": "Jackie Oliver" },
+        { "team": "Ligier Renault", "principal": "Guy Ligier" },
+        { "team": "March Ilmor", "principal": "Ian Phillips" },
+        { "team": "Larrousse Lamborghini", "principal": "Gérard Larrousse" },
+        { "team": "Dallara Ferrari", "principal": "Gianpaolo Dallara" },
+        { "team": "Minardi Lamborghini", "principal": "Giancarlo Minardi" },
+        { "team": "Jordan Yamaha", "principal": "Eddie Jordan" },
+        { "team": "Andrea Moda Judd", "principal": "Andrea Sassetti" },
+        { "team": "Fondmetal Ford", "principal": "Gabriele Rumi" },
+        { "team": "Brabham Judd", "principal": "Herbie Blash" }
+      ]
+    },
+    {
+      "year": 1991,
+      "teams": [
+        { "team": "McLaren Honda", "principal": "Ron Dennis" },
+        { "team": "Williams Renault", "principal": "Frank Williams" },
+        { "team": "Scuderia Ferrari", "principal": "Cesare Fiorio (until May), Claudio Lombardi (from May)" },
+        { "team": "Benetton Ford", "principal": "Flavio Briatore" },
+        { "team": "Jordan Ford", "principal": "Eddie Jordan" },
+        { "team": "Tyrrell Honda", "principal": "Ken Tyrrell" },
+        { "team": "BMS Scuderia Italia Judd", "principal": "Giuseppe Lucchini" },
+        { "team": "Dallara Judd", "principal": "Gianpaolo Dallara" },
+        { "team": "Minardi Ferrari", "principal": "Giancarlo Minardi" },
+        { "team": "Ligier Lamborghini", "principal": "Guy Ligier" },
+        { "team": "Footwork Porsche", "principal": "Jackie Oliver" },
+        { "team": "Lotus Judd", "principal": "Peter Collins" },
+        { "team": "Brabham Yamaha", "principal": "Herbie Blash" },
+        { "team": "AGS Ford", "principal": "Henri Julien" },
+        { "team": "Coloni Ford", "principal": "Enzo Coloni" },
+        { "team": "Fondmetal Ford", "principal": "Gabriele Rumi" },
+        { "team": "Leyton House Ilmor", "principal": "Akira Akagi" }
+      ]
+    },
+    {
+      "year": 1990,
+      "teams": [
+        { "team": "McLaren Honda", "principal": "Ron Dennis" },
+        { "team": "Scuderia Ferrari", "principal": "Cesare Fiorio" },
+        { "team": "Benetton Ford", "principal": "Flavio Briatore" },
+        { "team": "Williams Renault", "principal": "Frank Williams" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Lotus Lamborghini", "principal": "Peter Warr" },
+        { "team": "Arrows Ford", "principal": "Jackie Oliver" },
+        { "team": "Brabham Judd", "principal": "Joachim Lüthi" },
+        { "team": "Minardi Ford", "principal": "Giancarlo Minardi" },
+        { "team": "Ligier Ford", "principal": "Guy Ligier" },
+        { "team": "Leyton House Judd", "principal": "Akira Akagi" },
+        { "team": "Dallara Ford", "principal": "Gianpaolo Dallara" },
+        { "team": "Coloni Ford", "principal": "Enzo Coloni" },
+        { "team": "AGS Ford", "principal": "Henri Julien" },
+        { "team": "Osella Ford", "principal": "Enzo Osella" },
+        { "team": "EuroBrun Judd", "principal": "Walter Brun" }
+      ]
+    },
+    {
+      "year": 1989,
+      "teams": [
+        { "team": "McLaren Honda", "principal": "Ron Dennis" },
+        { "team": "Williams Renault", "principal": "Frank Williams" },
+        { "team": "Scuderia Ferrari", "principal": "Cesare Fiorio" },
+        { "team": "Benetton Ford", "principal": "Flavio Briatore" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Arrows Ford", "principal": "Jackie Oliver" },
+        { "team": "Lotus Judd", "principal": "Peter Warr" },
+        { "team": "Brabham Judd", "principal": "Joachim Lüthi" },
+        { "team": "Minardi Ford", "principal": "Giancarlo Minardi" },
+        { "team": "Dallara Ford", "principal": "Gianpaolo Dallara" },
+        { "team": "Ligier Ford", "principal": "Guy Ligier" },
+        { "team": "March Judd", "principal": "Ian Phillips" },
+        { "team": "Onyx Ford", "principal": "Greg Field" },
+        { "team": "Larrousse Lamborghini", "principal": "Gérard Larrousse" },
+        { "team": "Rial Ford", "principal": "Günter Schmid" },
+        { "team": "Coloni Ford", "principal": "Enzo Coloni" },
+        { "team": "AGS Ford", "principal": "Henri Julien" },
+        { "team": "Zakspeed Yamaha", "principal": "Erich Zakowski" },
+        { "team": "Osella Ford", "principal": "Enzo Osella" },
+        { "team": "EuroBrun Judd", "principal": "Walter Brun" }
+      ]
+    },
+    {
+      "year": 1988,
+      "teams": [
+        { "team": "McLaren Honda", "principal": "Ron Dennis" },
+        { "team": "Scuderia Ferrari", "principal": "Cesare Fiorio" },
+        { "team": "Benetton Ford", "principal": "Peter Collins" },
+        { "team": "Williams Judd", "principal": "Frank Williams" },
+        { "team": "Lotus Honda", "principal": "Peter Warr" },
+        { "team": "Arrows Megatron", "principal": "Jackie Oliver" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "March Judd", "principal": "Ian Phillips" },
+        { "team": "Ligier Judd", "principal": "Guy Ligier" },
+        { "team": "Brabham Judd", "principal": "Joachim Lüthi" },
+        { "team": "Minardi Ford", "principal": "Giancarlo Minardi" },
+        { "team": "AGS Ford", "principal": "Henri Julien" },
+        { "team": "Dallara Ford", "principal": "Gianpaolo Dallara" },
+        { "team": "Zakspeed Yamaha", "principal": "Erich Zakowski" },
+        { "team": "Coloni Ford", "principal": "Enzo Coloni" },
+        { "team": "Osella Osella", "principal": "Enzo Osella" },
+        { "team": "Rial Ford", "principal": "Günter Schmid" },
+        { "team": "EuroBrun Ford", "principal": "Walter Brun" }
+      ]
+    },
+    {
+      "year": 1987,
+      "teams": [
+        { "team": "Williams Honda", "principal": "Frank Williams" },
+        { "team": "McLaren TAG", "principal": "Ron Dennis" },
+        { "team": "Lotus Honda", "principal": "Peter Warr" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari (until August), Cesare Fiorio (from August)" },
+        { "team": "Benetton Ford", "principal": "Peter Collins" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Arrows Megatron", "principal": "Jackie Oliver" },
+        { "team": "Brabham BMW", "principal": "Bernie Ecclestone" },
+        { "team": "Lola Ford", "principal": "Gérard Larrousse" },
+        { "team": "Ligier Megatron", "principal": "Guy Ligier" },
+        { "team": "Zakspeed Ford", "principal": "Erich Zakowski" },
+        { "team": "Osella Alfa Romeo", "principal": "Enzo Osella" },
+        { "team": "Minardi Motori Moderni", "principal": "Giancarlo Minardi" },
+        { "team": "March Ford", "principal": "Ian Phillips" },
+        { "team": "AGS Ford", "principal": "Henri Julien" },
+        { "team": "Coloni Ford", "principal": "Enzo Coloni" }
+      ]
+    },
+    {
+      "year": 1986,
+      "teams": [
+        { "team": "Williams Honda", "principal": "Frank Williams" },
+        { "team": "McLaren TAG", "principal": "Ron Dennis" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Lotus Renault", "principal": "Peter Warr" },
+        { "team": "Ligier Renault", "principal": "Guy Ligier" },
+        { "team": "Benetton BMW", "principal": "Peter Collins" },
+        { "team": "Brabham BMW", "principal": "Bernie Ecclestone" },
+        { "team": "Arrows BMW", "principal": "Jackie Oliver" },
+        { "team": "Tyrrell Renault", "principal": "Ken Tyrrell" },
+        { "team": "Lola Ford", "principal": "Gérard Larrousse" },
+        { "team": "Zakspeed Ford", "principal": "Erich Zakowski" },
+        { "team": "Osella Alfa Romeo", "principal": "Enzo Osella" },
+        { "team": "Minardi Motori Moderni", "principal": "Giancarlo Minardi" }
+      ]
+    },
+    {
+      "year": 1985,
+      "teams": [
+        { "team": "McLaren TAG", "principal": "Ron Dennis" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Williams Honda", "principal": "Frank Williams" },
+        { "team": "Lotus Renault", "principal": "Peter Warr" },
+        { "team": "Brabham BMW", "principal": "Bernie Ecclestone" },
+        { "team": "Ligier Renault", "principal": "Guy Ligier" },
+        { "team": "Renault", "principal": "Gérard Larrousse" },
+        { "team": "Arrows BMW", "principal": "Jackie Oliver" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "RAM Hart", "principal": "John Macdonald" },
+        { "team": "Osella Alfa Romeo", "principal": "Enzo Osella" },
+        { "team": "Minardi Motori Moderni", "principal": "Giancarlo Minardi" },
+        { "team": "Zakspeed", "principal": "Erich Zakowski" }
+      ]
+    },
+    {
+      "year": 1984,
+      "teams": [
+        { "team": "McLaren TAG", "principal": "Ron Dennis" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Lotus Renault", "principal": "Peter Warr" },
+        { "team": "Brabham BMW", "principal": "Bernie Ecclestone" },
+        { "team": "Williams Honda", "principal": "Frank Williams" },
+        { "team": "Renault", "principal": "Gérard Larrousse" },
+        { "team": "Arrows Ford", "principal": "Jackie Oliver" },
+        { "team": "Ligier Renault", "principal": "Guy Ligier" },
+        { "team": "Toleman Hart", "principal": "Alex Tai" },
+        { "team": "Spirit Hart", "principal": "John Wickham" },
+        { "team": "Osella Alfa Romeo", "principal": "Enzo Osella" },
+        { "team": "ATS BMW", "principal": "Günter Schmid" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "RAM Hart", "principal": "John Macdonald" }
+      ]
+    },
+    {
+      "year": 1983,
+      "teams": [
+        { "team": "Brabham BMW", "principal": "Bernie Ecclestone" },
+        { "team": "Renault", "principal": "Gérard Larrousse" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Williams Ford", "principal": "Frank Williams" },
+        { "team": "McLaren Ford", "principal": "Ron Dennis" },
+        { "team": "Ligier Ford", "principal": "Guy Ligier" },
+        { "team": "Arrows Ford", "principal": "Jackie Oliver" },
+        { "team": "Lotus Renault", "principal": "Peter Warr" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Toleman Hart", "principal": "Alex Tai" },
+        { "team": "ATS BMW", "principal": "Günter Schmid" },
+        { "team": "Osella Ford", "principal": "Enzo Osella" },
+        { "team": "RAM Ford", "principal": "John Macdonald" },
+        { "team": "Theodore Ford", "principal": "Teddy Yip" },
+        { "team": "Spirit Honda", "principal": "John Wickham" }
+      ]
+    },
+    {
+      "year": 1982,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "McLaren Ford", "principal": "Ron Dennis" },
+        { "team": "Renault", "principal": "Gérard Larrousse" },
+        { "team": "Williams Ford", "principal": "Frank Williams" },
+        { "team": "Brabham BMW", "principal": "Bernie Ecclestone" },
+        { "team": "Lotus Ford", "principal": "Peter Warr" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Arrows Ford", "principal": "Jackie Oliver" },
+        { "team": "ATS Ford", "principal": "Günter Schmid" },
+        { "team": "Ligier Matra", "principal": "Guy Ligier" },
+        { "team": "Alfa Romeo", "principal": "Giancarlo Minardi" },
+        { "team": "Toleman Hart", "principal": "Alex Tai" },
+        { "team": "Osella Ford", "principal": "Enzo Osella" },
+        { "team": "Fittipaldi Ford", "principal": "Wilson Fittipaldi Júnior" },
+        { "team": "March Ford", "principal": "Robin Herd" },
+        { "team": "Theodore Ford", "principal": "Teddy Yip" }
+      ]
+    },
+    {
+      "year": 1981,
+      "teams": [
+        { "team": "Williams Ford", "principal": "Frank Williams" },
+        { "team": "Brabham Ford", "principal": "Bernie Ecclestone" },
+        { "team": "Renault", "principal": "Gérard Larrousse" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Ligier Matra", "principal": "Guy Ligier" },
+        { "team": "Arrows Ford", "principal": "Jackie Oliver" },
+        { "team": "McLaren Ford", "principal": "Ron Dennis" },
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "ATS Ford", "principal": "Günter Schmid" },
+        { "team": "Alfa Romeo", "principal": "Giancarlo Minardi" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Ensign Ford", "principal": "Mo Nunn" },
+        { "team": "Fittipaldi Ford", "principal": "Wilson Fittipaldi Júnior" },
+        { "team": "Osella Ford", "principal": "Enzo Osella" },
+        { "team": "Toleman Hart", "principal": "Alex Tai" },
+        { "team": "Theodore Ford", "principal": "Teddy Yip" }
+      ]
+    },
+    {
+      "year": 1980,
+      "teams": [
+        { "team": "Williams Ford", "principal": "Frank Williams" },
+        { "team": "Ligier Ford", "principal": "Guy Ligier" },
+        { "team": "Brabham Ford", "principal": "Bernie Ecclestone" },
+        { "team": "Renault", "principal": "Gérard Larrousse" },
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Arrows Ford", "principal": "Jackie Oliver" },
+        { "team": "Fittipaldi Ford", "principal": "Wilson Fittipaldi Júnior" },
+        { "team": "McLaren Ford", "principal": "Teddy Mayer" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Alfa Romeo", "principal": "Carlo Chiti" },
+        { "team": "ATS Ford", "principal": "Günter Schmid" },
+        { "team": "Osella Ford", "principal": "Enzo Osella" },
+        { "team": "Ensign Ford", "principal": "Mo Nunn" },
+        { "team": "Shadow Ford", "principal": "Teddy Yip" }
+      ]
+    },
+    {
+      "year": 1979,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Williams Ford", "principal": "Frank Williams" },
+        { "team": "Ligier Ford", "principal": "Guy Ligier" },
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Renault", "principal": "Gérard Larrousse" },
+        { "team": "McLaren Ford", "principal": "Teddy Mayer" },
+        { "team": "Brabham Alfa Romeo", "principal": "Bernie Ecclestone" },
+        { "team": "Arrows Ford", "principal": "Jackie Oliver" },
+        { "team": "Shadow Ford", "principal": "Teddy Yip" },
+        { "team": "ATS Ford", "principal": "Günter Schmid" },
+        { "team": "Fittipaldi Ford", "principal": "Wilson Fittipaldi Júnior" },
+        { "team": "Ensign Ford", "principal": "Mo Nunn" },
+        { "team": "Rebaque Ford", "principal": "Héctor Rebaque" }
+      ]
+    },
+    {
+      "year": 1978,
+      "teams": [
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "Brabham Alfa Romeo", "principal": "Bernie Ecclestone" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Ligier Matra", "principal": "Guy Ligier" },
+        { "team": "McLaren Ford", "principal": "Teddy Mayer" },
+        { "team": "Arrows Ford", "principal": "Jackie Oliver" },
+        { "team": "Shadow Ford", "principal": "Teddy Yip" },
+        { "team": "Williams Ford", "principal": "Frank Williams" },
+        { "team": "Renault", "principal": "Gérard Larrousse" },
+        { "team": "Wolf Ford", "principal": "Walter Wolf" },
+        { "team": "ATS Ford", "principal": "Günter Schmid" },
+        { "team": "Surtees Ford", "principal": "John Surtees" },
+        { "team": "Ensign Ford", "principal": "Mo Nunn" },
+        { "team": "Fittipaldi Ford", "principal": "Wilson Fittipaldi Júnior" },
+        { "team": "Hesketh Ford", "principal": "Alexander Hesketh" },
+        { "team": "Martini Ford", "principal": "Tico Martini" }
+      ]
+    },
+    {
+      "year": 1977,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Brabham Alfa Romeo", "principal": "Bernie Ecclestone" },
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "McLaren Ford", "principal": "Teddy Mayer" },
+        { "team": "Wolf Ford", "principal": "Walter Wolf" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Fittipaldi Ford", "principal": "Wilson Fittipaldi Júnior" },
+        { "team": "Ligier Matra", "principal": "Guy Ligier" },
+        { "team": "Shadow Ford", "principal": "Teddy Yip" },
+        { "team": "Penske Ford", "principal": "Roger Penske" },
+        { "team": "Surtees Ford", "principal": "John Surtees" },
+        { "team": "Ensign Ford", "principal": "Mo Nunn" },
+        { "team": "ATS Penske", "principal": "Günter Schmid" },
+        { "team": "Hesketh Ford", "principal": "Alexander Hesketh" },
+        { "team": "Williams Ford", "principal": "Frank Williams" },
+        { "team": "Boro Ford", "principal": "Bob Sparshott" }
+      ]
+    },
+    {
+      "year": 1976,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "McLaren Ford", "principal": "Teddy Mayer" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Penske Ford", "principal": "Roger Penske" },
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "Brabham Alfa Romeo", "principal": "Bernie Ecclestone" },
+        { "team": "Ligier Matra", "principal": "Guy Ligier" },
+        { "team": "Shadow Ford", "principal": "Don Nichols" },
+        { "team": "March Ford", "principal": "Max Mosley" },
+        { "team": "Wolf-Williams Ford", "principal": "Walter Wolf" },
+        { "team": "Surtees Ford", "principal": "John Surtees" },
+        { "team": "Fittipaldi Ford", "principal": "Wilson Fittipaldi Júnior" },
+        { "team": "Ensign Ford", "principal": "Mo Nunn" },
+        { "team": "Hesketh Ford", "principal": "Alexander Hesketh" },
+        { "team": "BRM", "principal": "Louis Stanley" }
+      ]
+    },
+    {
+      "year": 1975,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Brabham Ford", "principal": "Bernie Ecclestone" },
+        { "team": "McLaren Ford", "principal": "Teddy Mayer" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Hesketh Ford", "principal": "Alexander Hesketh" },
+        { "team": "Shadow Ford", "principal": "Don Nichols" },
+        { "team": "March Ford", "principal": "Max Mosley" },
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "Penske Ford", "principal": "Roger Penske" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Surtees Ford", "principal": "John Surtees" },
+        { "team": "Fittipaldi Ford", "principal": "Wilson Fittipaldi Júnior" },
+        { "team": "Ensign Ford", "principal": "Mo Nunn" },
+        { "team": "Williams Ford", "principal": "Frank Williams" }
+      ]
+    },
+    {
+      "year": 1974,
+      "teams": [
+        { "team": "McLaren Ford", "principal": "Teddy Mayer" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Brabham Ford", "principal": "Bernie Ecclestone" },
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "Shadow Ford", "principal": "Don Nichols" },
+        { "team": "March Ford", "principal": "Max Mosley" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Surtees Ford", "principal": "John Surtees" },
+        { "team": "Hesketh Ford", "principal": "Alexander Hesketh" },
+        { "team": "Iso Marlboro Ford", "principal": "Frank Williams" },
+        { "team": "Penske Ford", "principal": "Roger Penske" },
+        { "team": "Ensign Ford", "principal": "Mo Nunn" },
+        { "team": "Amon Ford", "principal": "Chris Amon" }
+      ]
+    },
+    {
+      "year": 1973,
+      "teams": [
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "McLaren Ford", "principal": "Teddy Mayer" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Brabham Ford", "principal": "Bernie Ecclestone" },
+        { "team": "March Ford", "principal": "Max Mosley" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Shadow Ford", "principal": "Don Nichols" },
+        { "team": "Surtees Ford", "principal": "John Surtees" },
+        { "team": "Iso Marlboro Ford", "principal": "Frank Williams" },
+        { "team": "Ensign Ford", "principal": "Mo Nunn" },
+        { "team": "Tecno", "principal": "Gianfranco Pederzani" },
+        { "team": "Hesketh March", "principal": "Alexander Hesketh" }
+      ]
+    },
+    {
+      "year": 1972,
+      "teams": [
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "McLaren Ford", "principal": "Teddy Mayer" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Surtees Ford", "principal": "John Surtees" },
+        { "team": "Brabham Ford", "principal": "Bernie Ecclestone" },
+        { "team": "March Ford", "principal": "Max Mosley" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Politoys-FX3 Ford", "principal": "Frank Williams" },
+        { "team": "Connew Ford", "principal": "Peter Connew" },
+        { "team": "Tecno", "principal": "Gianfranco Pederzani" }
+      ]
+    },
+    {
+      "year": 1971,
+      "teams": [
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "March Ford", "principal": "Max Mosley" },
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "McLaren Ford", "principal": "Bruce McLaren (posthumously), Teddy Mayer" },
+        { "team": "Surtees Ford", "principal": "John Surtees" },
+        { "team": "Matra", "principal": "Jean-Luc Lagardère" },
+        { "team": "Brabham Ford", "principal": "Ron Tauranac" },
+        { "team": "March Alfa Romeo", "principal": "Max Mosley" },
+        { "team": "Frank Williams Racing Cars Ford", "principal": "Frank Williams" }
+      ]
+    },
+    {
+      "year": 1970,
+      "teams": [
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Brabham Ford", "principal": "Jack Brabham" },
+        { "team": "March Ford", "principal": "Max Mosley" },
+        { "team": "McLaren Ford", "principal": "Bruce McLaren (until June), Teddy Mayer (from June)" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Matra", "principal": "Jean-Luc Lagardère" },
+        { "team": "Surtees Ford", "principal": "John Surtees" },
+        { "team": "De Tomaso Ford", "principal": "Alejandro de Tomaso" },
+        { "team": "Frank Williams Racing Cars Ford", "principal": "Frank Williams" }
+      ]
+    },
+    {
+      "year": 1969,
+      "teams": [
+        { "team": "Matra Ford", "principal": "Jean-Luc Lagardère" },
+        { "team": "Brabham Ford", "principal": "Jack Brabham" },
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "McLaren Ford", "principal": "Bruce McLaren" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Eagle Weslake", "principal": "Dan Gurney" },
+        { "team": "Cooper BRM", "principal": "John Cooper" }
+      ]
+    },
+    {
+      "year": 1968,
+      "teams": [
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "McLaren Ford", "principal": "Bruce McLaren" },
+        { "team": "Matra Ford", "principal": "Jean-Luc Lagardère" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Brabham Repco", "principal": "Jack Brabham" },
+        { "team": "Honda", "principal": "Kihachiro Kawashima" },
+        { "team": "Cooper BRM", "principal": "John Cooper" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" },
+        { "team": "Eagle Weslake", "principal": "Dan Gurney" }
+      ]
+    },
+    {
+      "year": 1967,
+      "teams": [
+        { "team": "Brabham Repco", "principal": "Jack Brabham" },
+        { "team": "McLaren BRM", "principal": "Bruce McLaren" },
+        { "team": "Lotus Ford", "principal": "Colin Chapman" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Honda", "principal": "Kihachiro Kawashima" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Cooper Maserati", "principal": "John Cooper" },
+        { "team": "Eagle Weslake", "principal": "Dan Gurney" },
+        { "team": "Matra Ford", "principal": "Jean-Luc Lagardère" },
+        { "team": "Tyrrell Ford", "principal": "Ken Tyrrell" }
+      ]
+    },
+    {
+      "year": 1966,
+      "teams": [
+        { "team": "Brabham Repco", "principal": "Jack Brabham" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Lotus BRM", "principal": "Colin Chapman" },
+        { "team": "Cooper Maserati", "principal": "John Cooper" },
+        { "team": "McLaren Ford", "principal": "Bruce McLaren" },
+        { "team": "Honda", "principal": "Kihachiro Kawashima" },
+        { "team": "Eagle Climax", "principal": "Dan Gurney" },
+        { "team": "Matra BRM", "principal": "Jean-Luc Lagardère" }
+      ]
+    },
+    {
+      "year": 1965,
+      "teams": [
+        { "team": "Lotus Climax", "principal": "Colin Chapman" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Brabham Climax", "principal": "Jack Brabham" },
+        { "team": "Cooper Climax", "principal": "John Cooper" },
+        { "team": "Honda", "principal": "Kihachiro Kawashima" },
+        { "team": "McLaren Ford", "principal": "Bruce McLaren" },
+        { "team": "Repco Brabham", "principal": "Jack Brabham" }
+      ]
+    },
+    {
+      "year": 1964,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Lotus Climax", "principal": "Colin Chapman" },
+        { "team": "Brabham Climax", "principal": "Jack Brabham" },
+        { "team": "Cooper Climax", "principal": "John Cooper" },
+        { "team": "Honda", "principal": "Kihachiro Kawashima" },
+        { "team": "BRP BRM", "principal": "Alfred Owen" },
+        { "team": "McLaren Climax", "principal": "Bruce McLaren" }
+      ]
+    },
+    {
+      "year": 1963,
+      "teams": [
+        { "team": "Lotus Climax", "principal": "Colin Chapman" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Brabham Climax", "principal": "Jack Brabham" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Cooper Climax", "principal": "John Cooper" },
+        { "team": "Porsche", "principal": "Fritz Huschke von Hanstein" },
+        { "team": "ATS", "principal": "Carlo Chiti" },
+        { "team": "BRP BRM", "principal": "Alfred Owen" }
+      ]
+    },
+    {
+      "year": 1962,
+      "teams": [
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Lotus Climax", "principal": "Colin Chapman" },
+        { "team": "Cooper Climax", "principal": "John Cooper" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Porsche", "principal": "Fritz Huschke von Hanstein" },
+        { "team": "Brabham Climax", "principal": "Jack Brabham" },
+        { "team": "Lola Climax", "principal": "Eric Broadley" }
+      ]
+    },
+    {
+      "year": 1961,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Lotus Climax", "principal": "Colin Chapman" },
+        { "team": "Porsche", "principal": "Fritz Huschke von Hanstein" },
+        { "team": "Cooper Climax", "principal": "John Cooper" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Brabham Climax", "principal": "Jack Brabham" }
+      ]
+    },
+    {
+      "year": 1960,
+      "teams": [
+        { "team": "Cooper Climax", "principal": "John Cooper" },
+        { "team": "Lotus Climax", "principal": "Colin Chapman" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Porsche", "principal": "Fritz Huschke von Hanstein" },
+        { "team": "Maserati", "principal": "Omer Orsi" },
+        { "team": "Aston Martin", "principal": "David Brown" },
+        { "team": "Brabham Climax", "principal": "Jack Brabham" }
+      ]
+    },
+    {
+      "year": 1959,
+      "teams": [
+        { "team": "Cooper Climax", "principal": "John Cooper" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Lotus Climax", "principal": "Colin Chapman" },
+        { "team": "Aston Martin", "principal": "David Brown" },
+        { "team": "Porsche", "principal": "Fritz Huschke von Hanstein" },
+        { "team": "Maserati", "principal": "Omer Orsi" }
+      ]
+    },
+    {
+      "year": 1958,
+      "teams": [
+        { "team": "Vanwall", "principal": "Tony Vandervell" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Cooper Climax", "principal": "John Cooper" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Maserati", "principal": "Omer Orsi" },
+        { "team": "Lotus Climax", "principal": "Colin Chapman" },
+        { "team": "Porsche", "principal": "Fritz Huschke von Hanstein" }
+      ]
+    },
+    {
+      "year": 1957,
+      "teams": [
+        { "team": "Maserati", "principal": "Omer Orsi" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Vanwall", "principal": "Tony Vandervell" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Lotus Climax", "principal": "Colin Chapman" },
+        { "team": "Cooper Climax", "principal": "John Cooper" }
+      ]
+    },
+    {
+      "year": 1956,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Maserati", "principal": "Omer Orsi" },
+        { "team": "Vanwall", "principal": "Tony Vandervell" },
+        { "team": "BRM", "principal": "Louis Stanley" },
+        { "team": "Connaught", "principal": "Rodney Clarke" },
+        { "team": "Gordini", "principal": "Amédée Gordini" },
+        { "team": "Cooper Climax", "principal": "John Cooper" }
+      ]
+    },
+    {
+      "year": 1955,
+      "teams": [
+        { "team": "Mercedes-Benz", "principal": "Alfred Neubauer" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Maserati", "principal": "Omer Orsi" },
+        { "team": "Lancia", "principal": "Vittorio Jano" },
+        { "team": "Gordini", "principal": "Amédée Gordini" },
+        { "team": "Vanwall", "principal": "Tony Vandervell" },
+        { "team": "Cooper Bristol", "principal": "John Cooper" }
+      ]
+    },
+    {
+      "year": 1954,
+      "teams": [
+        { "team": "Mercedes-Benz", "principal": "Alfred Neubauer" },
+        { "team": "Maserati", "principal": "Omer Orsi" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Lancia", "principal": "Vittorio Jano" },
+        { "team": "Gordini", "principal": "Amédée Gordini" },
+        { "team": "HWM Alta", "principal": "George Abecassis" },
+        { "team": "Vanwall", "principal": "Tony Vandervell" },
+        { "team": "Cooper Bristol", "principal": "John Cooper" }
+      ]
+    },
+    {
+      "year": 1953,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Maserati", "principal": "Omer Orsi" },
+        { "team": "Gordini", "principal": "Amédée Gordini" },
+        { "team": "Cooper Bristol", "principal": "John Cooper" },
+        { "team": "HWM Alta", "principal": "George Abecassis" },
+        { "team": "Connaught", "principal": "Rodney Clarke" },
+        { "team": "Alta", "principal": "Geoffrey Taylor" }
+      ]
+    },
+    {
+      "year": 1952,
+      "teams": [
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Maserati", "principal": "Omer Orsi" },
+        { "team": "Gordini", "principal": "Amédée Gordini" },
+        { "team": "HWM Alta", "principal": "George Abecassis" },
+        { "team": "Cooper Bristol", "principal": "John Cooper" },
+        { "team": "Connaught", "principal": "Rodney Clarke" },
+        { "team": "Alta", "principal": "Geoffrey Taylor" }
+      ]
+    },
+    {
+      "year": 1951,
+      "teams": [
+        { "team": "Alfa Romeo", "principal": "Orazio Satta Puliga" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Maserati", "principal": "Omer Orsi" },
+        { "team": "Gordini", "principal": "Amédée Gordini" },
+        { "team": "Talbot-Lago", "principal": "Anthony Lago" },
+        { "team": "HWM Alta", "principal": "George Abecassis" },
+        { "team": "ERA", "principal": "Humphrey Cook" }
+      ]
+    },
+    {
+      "year": 1950,
+      "teams": [
+        { "team": "Alfa Romeo", "principal": "Orazio Satta Puliga" },
+        { "team": "Scuderia Ferrari", "principal": "Enzo Ferrari" },
+        { "team": "Maserati", "principal": "Omer Orsi" },
+        { "team": "Talbot-Lago", "principal": "Anthony Lago" },
+        { "team": "Gordini", "principal": "Amédée Gordini" },
+        { "team": "ERA", "principal": "Humphrey Cook" },
+        { "team": "Alta", "principal": "Geoffrey Taylor" }
+      ]
+    }
+  ]
+}

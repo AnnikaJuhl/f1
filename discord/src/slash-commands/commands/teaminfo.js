@@ -2,7 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
 const teamInfo = require('../data/af1db-seasons-entrants-drivers.json')
 //use for autocomplete years, shows driver and team, and also which rounds they were in (bit unnecessary for this command)
 const teamPerYear = require('../data/ateamsperyear.json')
-//teams per year, could be useful for filtering?
+//teams per year and team principals
 const constructorActivity = require('../data/f1db-constructors-chronology.json')
 //Shows years of activity per team 
 const generalConstructor = require('../data/f1db-constructors.json')
@@ -46,7 +46,7 @@ module.exports = {
             const allYears = Array.from(
                 new Set(teamInfo
                     .map(entry => entry.year)))
-                .sort((a, b) => a - b);
+                .sort((a, b) => b - a);
 
             const yearsFiltered = allYears
                 .filter(year => year
@@ -65,7 +65,7 @@ module.exports = {
             const selectedYear = interaction.options.getString('year');
 
             if (!selectedYear)
-                return await interaction.respond([]);
+                return interaction.respond([]);
 
             const teamsForYear = teamInfo
                 .filter(entry => entry.year.toString() === selectedYear)
@@ -77,7 +77,12 @@ module.exports = {
                 .filter(team => team.toLowerCase().startsWith(focusedValue.toLowerCase()))
                 .slice(0, 25)
                 .map(team => ({
-                    name: team,
+                    name: team
+                        .split('-')
+                        .map(pteam => pteam
+                            .charAt(0)
+                            .toUpperCase() + pteam.slice(1))
+                        .join(' '),
                     value: team
                 }));
             return await interaction.respond(filteredTeam);
@@ -97,13 +102,19 @@ module.exports = {
         const drivers = Array.from(new Set(filtered
             .map(entry => entry.driverId)
         ));
-
         const formattedDriver = drivers
             .map(name => name
                 .split('-')
-                .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+                .map(d => d.charAt(0).toUpperCase() + d.slice(1))
                 .join(' ')
             );
+
+        const teams = Array
+
+        const formattedTeam = team
+            .split('-')
+            .map(part => part[0].toUpperCase() + part.slice(1))
+            .join('')
 
         const driverList = formattedDriver.length > 0
             ? formattedDriver.join('\n')
@@ -111,13 +122,14 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setThumbnail(logo)
-            .setTitle(`Information on ${entry.constructorId}`)
+            .setTitle(`Information on ${formattedTeam} - (${year})`)
             .setColor('000435')
-            .setDescription(`Drivers for (driverList)`)
+            .addFields(
+        { name: '**Drivers:**', value: `${driverList}` || 'Unknown', inline: true })
             .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
             .setImage(footers)
             .setTimestamp();
 
-       return await interaction.reply({ embeds: [embed] });
-    }
+    return await interaction.reply({ embeds: [embed] });
+}
 }

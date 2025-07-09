@@ -8,7 +8,7 @@ const wininfo = require('../data/driverwins.json')
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('driver-history')
+        .setName('driver-info')
         .setDescription('Current and historic information on drivers!')
         .addStringOption(option =>
             option
