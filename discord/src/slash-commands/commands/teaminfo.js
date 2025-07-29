@@ -11,6 +11,7 @@ const constructors = require('../data/CONSTRUCTORSTANDINGS.json');
 //use this to see constructor standings OR maybe this one (../data/af1db-seasons-constructor-standings.json)
 const driver = require('../data/driversByYearNames.json')
 //use this for driver name or this one ('../data/driversByYearFull.json')
+const principal = require('../data/ateamprincipals.json')
 
 //DATA TO GATHER: Team principal per year, driver numbers per year (useful for driver command too!)
 
@@ -109,27 +110,59 @@ module.exports = {
                 .join(' ')
             );
 
-        const teams = Array
+        const driverList = formattedDriver.length > 0
+            ? formattedDriver.join('\n')
+            : 'No drivers'
 
         const formattedTeam = team
             .split('-')
             .map(part => part[0].toUpperCase() + part.slice(1))
-            .join('')
+            .join(' ')
 
-        const driverList = formattedDriver.length > 0
-            ? formattedDriver.join('\n')
-            : 'No drivers'
+        const yearInt = parseInt(year);
+
+        const principalEntry = principal.find(entry => entry.year === yearInt)
+        const teamEntry = principalYearEntry?.teams?.find(t => t.team.toLowerCase() === formattedTeam.toLowerCase());
+
+        const principalArray = Array.from(new Set(
+            principal
+                .map(p => p.principals)
+                .filter(p => typeof p === 'string' && p.trim() !== '')
+
+        ));
+
+        // let principicalEntry = [];
+        // If(principalEntry && Array.isArray(principalEntry.team)) {
+        //     principalArray = principalEntry.team
+        //         .map(teamEntry => teamEntry.principal)
+        //         .filter(p => typeof p === 'string' && p.trim() !== '');
+        // }
+
+        const formattedPrincipals = teamEntry?.principal
+            // .map(p => p
+            //     .split('-')
+            //     .map(part => part[0].toUpperCase() + part.slice(1))
+            //     .join('')
+            // ).join('\n')
+            ? teamEntry.principal
+                .split('-')
+                .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+                .join(' ')
+            : 'Unknown'
+
 
         const embed = new EmbedBuilder()
             .setThumbnail(logo)
             .setTitle(`Information on ${formattedTeam} - (${year})`)
             .setColor('000435')
             .addFields(
-        { name: '**Drivers:**', value: `${driverList}` || 'Unknown', inline: true })
+                { name: '**Drivers:**', value: `${driverList}` || 'Unknown', inline: true },
+                { name: '**Team Principal:**', value: `${formattedPrincipals}` || 'Unknown', inline: true }
+            )
             .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
             .setImage(footers)
             .setTimestamp();
 
-    return await interaction.reply({ embeds: [embed] });
-}
+        return await interaction.reply({ embeds: [embed] });
+    }
 }
