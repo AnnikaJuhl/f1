@@ -16,9 +16,14 @@ const principal = require('../data/ateamprincipals.json')
 //DATA TO GATHER: Team principal per year, driver numbers per year (useful for driver command too!)
 
 const footer = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/carfooter.jpeg')
-const footers = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-AssRaests/refs/heads/main/Landscapetrack.jpeg')
+const footers = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/Landscapetrack.jpeg')
 const logo = ('https://raw.githubusercontent.com/AnnikaJuhl/Pitstop-Assests/refs/heads/main/f1-abu-dhabi-gp-2017-f1-logo-6614911-removebg-preview.png')
 //used for general images, find new ones soon. So tempted to gather individual team pictures 
+
+const matches = uniqueYears
+    .filter(y => y.startsWith(search))
+    .slice(0, 25)
+    .map(y => ({ name: y, value: y }));
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -38,27 +43,25 @@ module.exports = {
                 .setRequired(true)),
 
     async autocomplete(interaction) {
+
         const focused = interaction.options.getFocused(true);
         console.log('Focused Option:', focused);
         const focusedName = focused.name;
-        const focusedValue = focused.value;
+        const focusedValue = focused.value.trim();
+
 
         if (focusedName === 'year') {
-            const allYears = Array.from(
-                new Set(teamInfo
-                    .map(entry => entry.year)))
-                .sort((a, b) => b - a);
-
-            const yearsFiltered = allYears
-                .filter(year => year
-                    .toString()
-                    .startsWith(focusedValue))
+            const matches = uniqueYears
+                .filter(y => y.startsWith(focusedValue))
                 .slice(0, 25)
-                .map(year => ({
-                    name: year.toString(),
-                    value: year.toString()
-                }));
-            return await interaction.respond(yearsFiltered);
+                .map(y => ({ name: y, value: y }));
+
+            if (matches.length === 0) {
+                return interaction.respond([
+                    { name: 'No matching year', value: focusedValue || 'none' }
+                ]);
+            }
+            return interaction.respond(matches);
         }
 
         if (focusedName === 'team') {
@@ -122,7 +125,7 @@ module.exports = {
         const yearInt = parseInt(year);
 
         const principalEntry = principal.find(entry => entry.year === yearInt)
-        const teamEntry = principalYearEntry?.teams?.find(t => t.team.toLowerCase() === formattedTeam.toLowerCase());
+        const teamEntry = principalEntry?.teams?.find(t => t.team.toLowerCase() === formattedTeam.toLowerCase());
 
         const principalArray = Array.from(new Set(
             principal
@@ -144,11 +147,15 @@ module.exports = {
             //     .map(part => part[0].toUpperCase() + part.slice(1))
             //     .join('')
             // ).join('\n')
-            ? teamEntry.principal
-                .split('-')
-                .map(part => part.charAt(0).toUpperCase() + part.slice(1))
-                .join(' ')
-            : 'Unknown'
+            // ? teamEntry.principal
+            //     .split('-')
+            //     .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+            //     .join(' ')
+            // : 'Unknown'
+            ? teamEntry.principal.map(p => p.split('-').map(capitalize).join(' ')).join('\n')
+            : typeof teamEntry?.principal === 'string'
+                ? teamEntry.principal.split('-').map(capitalize).join(' ')
+                : 'Unknown';
 
 
         const embed = new EmbedBuilder()
@@ -156,7 +163,7 @@ module.exports = {
             .setTitle(`Information on ${formattedTeam} - (${year})`)
             .setColor('000435')
             .addFields(
-                { name: '**Drivers:**', value: `${driverList}` || 'Unknown', inline: true },
+                { name: '**Drivers:**', value: driverList || 'Unknown', inline: true },
                 { name: '**Team Principal:**', value: `${formattedPrincipals}` || 'Unknown', inline: true }
             )
             .setFooter({ text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
