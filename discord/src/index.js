@@ -17,7 +17,6 @@ const commandsPath = path.join(__dirname, 'slash-commands');
 
 client.on('ready', () => {
   console.log('Going for the gap!');
-  // client.channels.fetch('1373502563894296666').then(channel => channel.send(':('));
 });
 
 sendReminders(client);
